@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.listeners.ListenerTest"/>
+    <listener class-name="com.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.tests.TSLogin">
+        <methods>
+          <include name="SignIn"/>
+          <include name="teardown"/>
+          <include name="signout"/>
+          <include name="closeApplication"/>
+          <include name="init"/>
+          <include name="Setup"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.tests.TSLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

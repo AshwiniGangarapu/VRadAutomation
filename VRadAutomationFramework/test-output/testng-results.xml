@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="16" total="33" passed="16" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-21T17:12:53 IST" name="Suite" finished-at="2022-09-21T17:16:59 IST" duration-ms="246628">
+    <groups>
+    </groups>
+    <test started-at="2022-09-21T17:12:53 IST" name="Test" finished-at="2022-09-21T17:16:59 IST" duration-ms="246628">
+      <class name="com.tests.TSDashboard">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:42 IST" name="init" finished-at="2022-09-21T17:13:47 IST" duration-ms="4307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:47 IST" name="preSetup" finished-at="2022-09-21T17:13:49 IST" duration-ms="2001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="VerifySummaryPageRecordscorrespondToShowingDate()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:49 IST" name="VerifySummaryPageRecordscorrespondToShowingDate" finished-at="2022-09-21T17:13:52 IST" duration-ms="3364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySummaryPageRecordscorrespondToShowingDate -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:52 IST" name="signout" finished-at="2022-09-21T17:13:53 IST" duration-ms="1101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifySummaryPageRecordscorrespondToShowingDate status=SUCCESS method=TSDashboard.VerifySummaryPageRecordscorrespondToShowingDate()[pri:0, instance:com.tests.TSDashboard@5524cca1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:53 IST" name="preSetup" finished-at="2022-09-21T17:13:54 IST" duration-ms="1279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="ActionsViewIconClick()[pri:1, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:54 IST" name="ActionsViewIconClick" finished-at="2022-09-21T17:14:01 IST" duration-ms="6616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActionsViewIconClick -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:14:01 IST" name="signout" finished-at="2022-09-21T17:14:02 IST" duration-ms="1083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ActionsViewIconClick status=SUCCESS method=TSDashboard.ActionsViewIconClick()[pri:1, instance:com.tests.TSDashboard@5524cca1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:14:02 IST" name="teardown" finished-at="2022-09-21T17:14:02 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tests.TSDashboard -->
+      <class name="com.tests.TSNavigationPanel">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:12:52 IST" name="start" finished-at="2022-09-21T17:12:53 IST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:12:53 IST" name="init" finished-at="2022-09-21T17:13:00 IST" duration-ms="7252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:00 IST" name="setUp" finished-at="2022-09-21T17:13:03 IST" duration-ms="2745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyExpandCollapse()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:03 IST" name="VerifyExpandCollapse" finished-at="2022-09-21T17:13:03 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyExpandCollapse -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:03 IST" name="signout" finished-at="2022-09-21T17:13:04 IST" duration-ms="1124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyExpandCollapse status=SUCCESS method=TSNavigationPanel.VerifyExpandCollapse()[pri:0, instance:com.tests.TSNavigationPanel@48075da3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:04 IST" name="setUp" finished-at="2022-09-21T17:13:06 IST" duration-ms="1498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAllIconsOnCollapse()[pri:1, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:06 IST" name="verifyAllIconsOnCollapse" finished-at="2022-09-21T17:13:10 IST" duration-ms="4025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllIconsOnCollapse -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:10 IST" name="signout" finished-at="2022-09-21T17:13:11 IST" duration-ms="1125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllIconsOnCollapse status=SUCCESS method=TSNavigationPanel.verifyAllIconsOnCollapse()[pri:1, instance:com.tests.TSNavigationPanel@48075da3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:11 IST" name="setUp" finished-at="2022-09-21T17:13:12 IST" duration-ms="1376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUserAccountIconOnExpand()[pri:2, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:12 IST" name="verifyUserAccountIconOnExpand" finished-at="2022-09-21T17:13:13 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAccountIconOnExpand -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:13 IST" name="signout" finished-at="2022-09-21T17:13:14 IST" duration-ms="1144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserAccountIconOnExpand status=SUCCESS method=TSNavigationPanel.verifyUserAccountIconOnExpand()[pri:2, instance:com.tests.TSNavigationPanel@48075da3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:14 IST" name="setUp" finished-at="2022-09-21T17:13:15 IST" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyIconsOnExpandCorrespondingToRoles()[pri:3, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:15 IST" name="verifyIconsOnExpandCorrespondingToRoles" finished-at="2022-09-21T17:13:34 IST" duration-ms="18599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIconsOnExpandCorrespondingToRoles -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:34 IST" name="signout" finished-at="2022-09-21T17:13:35 IST" duration-ms="1117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyIconsOnExpandCorrespondingToRoles status=SUCCESS method=TSNavigationPanel.verifyIconsOnExpandCorrespondingToRoles()[pri:3, instance:com.tests.TSNavigationPanel@48075da3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:35 IST" name="teardown" finished-at="2022-09-21T17:13:35 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:17:00 IST" name="closeApplication" finished-at="2022-09-21T17:17:00 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.tests.TSNavigationPanel -->
+      <class name="com.tests.TSLogin">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:46 IST" name="init" finished-at="2022-09-21T17:14:50 IST" duration-ms="4499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:50 IST" name="Setup" finished-at="2022-09-21T17:14:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="InvalidSignIn()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:50 IST" name="InvalidSignIn" description="This TC will perform login with invalid password and verifies the error message." finished-at="2022-09-21T17:14:52 IST" duration-ms="1852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidSignIn -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:52 IST" name="signout" finished-at="2022-09-21T17:14:52 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidSignIn status=SUCCESS method=TSLogin.InvalidSignIn()[pri:0, instance:com.tests.TSLogin@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Input must be set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Input must be set
+at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:97)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:88)
+at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:21)
+at com.utils.SeleniumUIUtils.click(SeleniumUIUtils.java:57)
+at com.utils.CommonUtils.Logout(CommonUtils.java:93)
+at com.tests.TSLogin.signout(TSLogin.java:165)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method signature="VerifyPasswordVisibility()[pri:1, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:52 IST" name="VerifyPasswordVisibility" description="This TC will verify the functionality of view icon in password field" finished-at="2022-09-21T17:14:53 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPasswordVisibility -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:52 IST" name="Setup" finished-at="2022-09-21T17:14:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:53 IST" name="signout" finished-at="2022-09-21T17:14:53 IST" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyPasswordVisibility status=SUCCESS method=TSLogin.VerifyPasswordVisibility()[pri:1, instance:com.tests.TSLogin@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Input must be set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Input must be set
+at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:97)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:88)
+at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:21)
+at com.utils.SeleniumUIUtils.click(SeleniumUIUtils.java:57)
+at com.utils.CommonUtils.Logout(CommonUtils.java:93)
+at com.tests.TSLogin.signout(TSLogin.java:165)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:53 IST" name="Setup" finished-at="2022-09-21T17:14:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="SignIn()[pri:2, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:53 IST" name="SignIn" description="This TC will perform valid login" finished-at="2022-09-21T17:15:44 IST" duration-ms="50948" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@9443150 (tried for 50 second(s) with 15 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@9443150 (tried for 50 second(s) with 15 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:24)
+at com.utils.SeleniumUIUtils.isDisplayed(SeleniumUIUtils.java:118)
+at com.tests.TSLogin.SignIn(TSLogin.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#demo-simple-select"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SSTINADMLP1150', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f04ddd4465df39ab4b984ff2c025dabf, findElement {using=css selector, value=#demo-simple-select}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ashwini.g\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:60876}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60876/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f04ddd4465df39ab4b984ff2c025dabf
+at jdk.internal.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at com.utils.SeleniumWaitUtils$1.apply(SeleniumWaitUtils.java:26)
+at com.utils.SeleniumWaitUtils$1.apply(SeleniumWaitUtils.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:15:44 IST" name="signout" finished-at="2022-09-21T17:15:44 IST" duration-ms="636" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignIn status=FAILURE method=TSLogin.SignIn()[pri:2, instance:com.tests.TSLogin@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Input must be set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Input must be set
+at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:97)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:88)
+at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:21)
+at com.utils.SeleniumUIUtils.click(SeleniumUIUtils.java:57)
+at com.utils.CommonUtils.Logout(CommonUtils.java:93)
+at com.tests.TSLogin.signout(TSLogin.java:165)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:15:44 IST" name="teardown" finished-at="2022-09-21T17:15:45 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tests.TSLogin -->
+      <class name="com.tests.TSNewDispatch">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:02 IST" name="init" finished-at="2022-09-21T17:14:07 IST" duration-ms="4589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:07 IST" name="setUp" finished-at="2022-09-21T17:14:09 IST" duration-ms="2019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SendDispatch()[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:09 IST" name="SendDispatch" description="This TC will perform a positve flow towards send Dispatch with custom message" finished-at="2022-09-21T17:14:45 IST" duration-ms="35710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendDispatch -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:45 IST" name="signout" finished-at="2022-09-21T17:14:46 IST" duration-ms="1279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SendDispatch status=SUCCESS method=TSNewDispatch.SendDispatch()[pri:0, instance:com.tests.TSNewDispatch@48bb62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:46 IST" name="teardown" finished-at="2022-09-21T17:14:46 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tests.TSNewDispatch -->
+      <class name="com.tests.TSManageUsers">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:17 IST" name="init" finished-at="2022-09-21T17:16:22 IST" duration-ms="4502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:22 IST" name="setUp" finished-at="2022-09-21T17:16:24 IST" duration-ms="1993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyUsersCorrespondingToTheShowing()[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:24 IST" name="VerifyUsersCorrespondingToTheShowing" finished-at="2022-09-21T17:16:35 IST" duration-ms="11502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUsersCorrespondingToTheShowing -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:35 IST" name="signout" finished-at="2022-09-21T17:16:36 IST" duration-ms="1193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyUsersCorrespondingToTheShowing status=SUCCESS method=TSManageUsers.VerifyUsersCorrespondingToTheShowing()[pri:0, instance:com.tests.TSManageUsers@402c4085] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:36 IST" name="teardown" finished-at="2022-09-21T17:16:36 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tests.TSManageUsers -->
+      <class name="com.tests.TSManageTemplates">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:45 IST" name="init" finished-at="2022-09-21T17:15:48 IST" duration-ms="3827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:48 IST" name="setUp" finished-at="2022-09-21T17:15:50 IST" duration-ms="1963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyTitle()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:50 IST" name="VerifyTitle" finished-at="2022-09-21T17:15:51 IST" duration-ms="926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTitle -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:51 IST" name="signout" finished-at="2022-09-21T17:15:52 IST" duration-ms="1127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyTitle status=SUCCESS method=TSManageTemplates.VerifyTitle()[pri:0, instance:com.tests.TSManageTemplates@57a78e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:52 IST" name="setUp" finished-at="2022-09-21T17:15:54 IST" duration-ms="1081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyCreateTemplate()[pri:1, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:54 IST" name="VerifyCreateTemplate" finished-at="2022-09-21T17:15:55 IST" duration-ms="1372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCreateTemplate -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:55 IST" name="signout" finished-at="2022-09-21T17:15:56 IST" duration-ms="1073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyCreateTemplate status=SUCCESS method=TSManageTemplates.VerifyCreateTemplate()[pri:1, instance:com.tests.TSManageTemplates@57a78e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:56 IST" name="setUp" finished-at="2022-09-21T17:15:57 IST" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyUsersRolesAccessiblity()[pri:2, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:57 IST" name="VerifyUsersRolesAccessiblity" finished-at="2022-09-21T17:16:16 IST" duration-ms="18490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUsersRolesAccessiblity -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:16:16 IST" name="signout" finished-at="2022-09-21T17:16:17 IST" duration-ms="1102" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyUsersRolesAccessiblity status=SUCCESS method=TSManageTemplates.VerifyUsersRolesAccessiblity()[pri:2, instance:com.tests.TSManageTemplates@57a78e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="MuiListItemText-root MuiListItemText-multiline css-1k0uu2f">...</div> is not clickable at point (124, 584). Other element would receive the click: <div class="tss-1qtl85h-MUIDataTableBodyCell-root tss-1vd39vz-MUIDataTableBodyCell-stackedCommon tss-11ncqdm-MUIDataTableBodyCell-responsiveStackedSmall">...</div>
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SSTINADMLP1150', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6665a29c6154e707125a1ae6eb234ccc, clickElement {id=ef9191c9-e1ae-4483-9c55-a097e1d4b94f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ashwini.g\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:60938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60938/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6665a29c6154e707125a1ae6eb234ccc)] -> xpath: //div[@class='MuiListItemText-root MuiListItemText-multiline css-1k0uu2f']]
+Session ID: 6665a29c6154e707125a1ae6eb234ccc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="MuiListItemText-root MuiListItemText-multiline css-1k0uu2f">...</div> is not clickable at point (124, 584). Other element would receive the click: <div class="tss-1qtl85h-MUIDataTableBodyCell-root tss-1vd39vz-MUIDataTableBodyCell-stackedCommon tss-11ncqdm-MUIDataTableBodyCell-responsiveStackedSmall">...</div>
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SSTINADMLP1150', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6665a29c6154e707125a1ae6eb234ccc, clickElement {id=ef9191c9-e1ae-4483-9c55-a097e1d4b94f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ashwini.g\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:60938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60938/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6665a29c6154e707125a1ae6eb234ccc)] -> xpath: //div[@class='MuiListItemText-root MuiListItemText-multiline css-1k0uu2f']]
+Session ID: 6665a29c6154e707125a1ae6eb234ccc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.utils.SeleniumUIUtils.click(SeleniumUIUtils.java:57)
+at com.utils.CommonUtils.Logout(CommonUtils.java:93)
+at com.tests.TSManageTemplates.signout(TSManageTemplates.java:217)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:16:17 IST" name="teardown" finished-at="2022-09-21T17:16:17 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tests.TSManageTemplates -->
+      <class name="com.tests.TSManageRecipients">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:36 IST" name="init" finished-at="2022-09-21T17:16:41 IST" duration-ms="4264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:41 IST" name="setUp" finished-at="2022-09-21T17:16:43 IST" duration-ms="1815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyCreateRecipient()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:43 IST" name="VerifyCreateRecipient" finished-at="2022-09-21T17:16:49 IST" duration-ms="5986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCreateRecipient -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:49 IST" name="signout" finished-at="2022-09-21T17:16:50 IST" duration-ms="1090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyCreateRecipient status=SUCCESS method=TSManageRecipients.VerifyCreateRecipient()[pri:0, instance:com.tests.TSManageRecipients@2767e23c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:50 IST" name="setUp" finished-at="2022-09-21T17:16:51 IST" duration-ms="1344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifySelectingRecordAndClickingEditRetrivesExactRecord()[pri:1, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:51 IST" name="VerifySelectingRecordAndClickingEditRetrivesExactRecord" finished-at="2022-09-21T17:16:58 IST" duration-ms="6922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySelectingRecordAndClickingEditRetrivesExactRecord -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:58 IST" name="signout" finished-at="2022-09-21T17:16:59 IST" duration-ms="1377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifySelectingRecordAndClickingEditRetrivesExactRecord status=SUCCESS method=TSManageRecipients.VerifySelectingRecordAndClickingEditRetrivesExactRecord()[pri:1, instance:com.tests.TSManageRecipients@2767e23c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:59 IST" name="teardown" finished-at="2022-09-21T17:16:59 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tests.TSManageRecipients -->
+      <class name="com.tests.TSForgotPassword">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-21T17:13:35 IST" name="init" finished-at="2022-09-21T17:13:40 IST" duration-ms="5453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-21T17:13:40 IST" name="preSetup" finished-at="2022-09-21T17:13:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="forgotPassword()[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-21T17:13:40 IST" name="forgotPassword" finished-at="2022-09-21T17:13:42 IST" duration-ms="1634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-21T17:13:42 IST" name="tearDown" finished-at="2022-09-21T17:13:42 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.TSForgotPassword -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
