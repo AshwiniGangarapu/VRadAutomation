@@ -12,11 +12,22 @@
 	<!--test name="Test" parallel = "classes" thread-count = "2" -->
 	
 		<parameter name="browser" value="chrome" />
+		<!--parameter name="URL" value="http://vrad-client.eastus.azurecontainer.io/"/-->
 		
 		<classes>
 				
-		 <class name="com.tests.TSManageRecipients" />
-		 			  	 
+		 <class name="com.tests.TSNavigationPanel">
+		 
+		   <methods>
+		   
+		      <include name="verifyUserAccountIconOnExpand"/>
+		
+		      <exclude name="verifyIconsOnExpandCorrespondingToRoles"/>
+	  
+	       </methods>
+	       
+		 </class>
+		 	  	 
 		</classes>
 	</test>
 </suite>

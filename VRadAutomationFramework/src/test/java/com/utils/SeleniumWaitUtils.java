@@ -18,7 +18,7 @@ public class SeleniumWaitUtils {
 
 	public WebElement doWaitForElement(final By element, WebDriver driver) {
 
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(50))
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
 				.pollingEvery(Duration.ofMillis(15L)).ignoring(NoSuchElementException.class);
 
 		WebElement ele = wait.until(new Function<WebDriver, WebElement>() {
@@ -28,11 +28,21 @@ public class SeleniumWaitUtils {
 		});
 		return ele;
 	}
+	
+	//Explicit waits
 
 	public WebElement waitForElementVisisbility(WebDriver driver, By element) {
-		WebElement result = new WebDriverWait(driver, Duration.ofSeconds(50))
+		WebElement result = new WebDriverWait(driver, Duration.ofSeconds(30))
 		        .until(ExpectedConditions.elementToBeClickable(element));
 		return result;
+	}
+	
+	public boolean waitForTextPresentInElementLocated(WebDriver driver, By element,String text) {
+		
+		Boolean result = new WebDriverWait(driver, Duration.ofSeconds(30))
+		        .until(ExpectedConditions.textToBePresentInElementLocated(element, text));
+		return result;
+		
 	}
 
 

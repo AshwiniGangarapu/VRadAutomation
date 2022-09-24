@@ -47,11 +47,6 @@ public class TSDashboard extends BaseClass {
 	//ExtentTest is used to create the body of the report.
 	ExtentTest logger;
 
-	String BaseUrl="http://vrad-client.eastus.azurecontainer.io/";	
-	String ForgotPassword="http://vrad-client.eastus.azurecontainer.io/forgotpassword";
-	String Dashboard="http://vrad-client.eastus.azurecontainer.io/dashboard";
-	String Login="http://vrad-client.eastus.azurecontainer.io/login";
-
 	String currentURL;
 
 	String UserName="ashwini.g@sstech.us";

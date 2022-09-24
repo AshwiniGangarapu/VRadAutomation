@@ -37,9 +37,9 @@ public class TSNewDispatch extends BaseClass{
 	CommonUtils CU = null;
 
 	String currentURL;
-	String Login="http://vrad-client.eastus.azurecontainer.io/login";
+	
 	String UserName="ashwini.g@sstech.us";
-	//String Password="Ashwini@123";
+	
 	XSSFSheet login = null;
 
 	@Parameters("browser")

@@ -35,9 +35,7 @@ public class TSNavigationPanel extends BaseClass{
 	XSSFSheet login = null;
 
 	String currentURL;
-	String Login="http://vrad-client.eastus.azurecontainer.io/login";
-	String UserName;
-
+	
 
 	@Parameters("browser")
 	@BeforeClass
@@ -120,8 +118,9 @@ public class TSNavigationPanel extends BaseClass{
 		UI.mouseHover(NP.CollapsedManageTemplatesButton(driver));
 		logger.log(LogStatus.INFO, "mouse hover on Manage templates button");
 		
-		UI.waitForElementVisibility(NP.MouseHoverTextForCollapsedButton(driver),driver);
-		Thread.sleep(2000);
+		//UI.waitForElementVisibility(NP.MouseHoverTextForCollapsedButton(driver),driver);
+		//Thread.sleep(2000);
+		boolean b=UI.waitForTextPresentInElementLocated(NP.MouseHoverTextForCollapsedButton(driver),driver,"Manage Template");
 
 		if(UI.isDisplayed(NP.MouseHoverTextForCollapsedButton(driver))) {
 
@@ -131,6 +130,7 @@ public class TSNavigationPanel extends BaseClass{
 			logger.log(LogStatus.PASS, "verified mouse hover text for Templates");
 
 		}
+		
 
 		UI.waitForElementVisibility(NP.ExpandCollapseButton(),driver);
 		//navigation panel expand.//just to logout properly.

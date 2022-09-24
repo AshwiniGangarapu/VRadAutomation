@@ -32,13 +32,13 @@ public class TSForgotPassword extends BaseClass{
 	ExtentTest logger;
 	LoginPage LP=new LoginPage();
 	
-	@Parameters("browser")
+	@Parameters({"browser","URL"})
 	@BeforeClass
-	public void init(String browser)
+	public void init(String browser,String URL)
 	{ 
 		driver = openBrowser(browser);
 		UI = new SeleniumUIUtils(driver);
-		driver.get("http://vrad-client.eastus.azurecontainer.io/");	
+		driver.get(URL);	
 		driver.manage().window().maximize();
 		
 	}

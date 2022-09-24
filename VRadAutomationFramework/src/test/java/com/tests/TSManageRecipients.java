@@ -35,9 +35,7 @@ public class TSManageRecipients extends BaseClass {
 	NavigationPanelPage NP = new NavigationPanelPage();
 
 	String currentURL;
-	String Login="http://vrad-client.eastus.azurecontainer.io/login";
-	String UserName="ashwini.g@sstech.us";
-	//String Password="Ashwini@123";
+	
 	ExtentTest logger;
 	XSSFSheet login = null;
 	XSSFSheet recipient = null;
@@ -208,9 +206,10 @@ public class TSManageRecipients extends BaseClass {
 
 
 	@Test(priority = 2,enabled=false)
-	public void VerifyUsersRolesAccessiblity() throws Exception {		
-				
-		String roleIdentified= CU.getRoles(UserName,driver);
+	public void VerifyUsersRolesAccessiblity() throws Exception {	
+		
+		
+		String roleIdentified= CU.getRoles(data.getDataAsString(login,"UserName", 2),driver);
 	    
 	    if(roleIdentified.equals("A")) {
 	    

@@ -37,18 +37,9 @@ public class TSLogin extends BaseClass{
 	//intializing a variable of type ExtentTest class.
     //ExtentTest is used to create the body of the report.
 	ExtentTest logger;
-	 XSSFSheet sheet = null;
-			
-	 String BaseUrl="http://vrad-client.eastus.azurecontainer.io/";	
-	 String ForgotPassword="http://vrad-client.eastus.azurecontainer.io/forgotpassword";
-	 String Dashboard="http://vrad-client.eastus.azurecontainer.io/dashboard";
-	 String Login="http://vrad-client.eastus.azurecontainer.io/login";
-		
-	 String currentURL;
-	
-	 String UserName="ashwini.g@sstech.us";
-	 String Password="Ashwini@123";
-	
+	 XSSFSheet sheet = null;			
+	 
+	 String currentURL;	
 	
 	@Parameters("browser")
 	@BeforeClass
@@ -91,7 +82,7 @@ public void SignIn() throws InterruptedException{
 	Assert.assertTrue(UI.isDisplayed(DP.expandShowingListBox()));
     
     //verifying the URL
-    Assert.assertEquals(driver.getCurrentUrl(),Dashboard,driver.getCurrentUrl());
+    Assert.assertEquals(driver.getCurrentUrl(),DashboardURL,driver.getCurrentUrl());
 	logger.log(LogStatus.PASS, "verified that valid login navigating to dashboard URL");
          	
 }
@@ -147,6 +138,7 @@ public void VerifyPasswordVisibility() throws InterruptedException {
 	logger.log(LogStatus.PASS, "verified that the value is visibility on");
 	
   }
+
 
 @AfterMethod
 public void signout(ITestResult result) {
