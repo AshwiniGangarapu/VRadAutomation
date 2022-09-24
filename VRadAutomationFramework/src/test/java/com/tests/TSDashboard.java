@@ -53,14 +53,13 @@ public class TSDashboard extends BaseClass {
 	String Password="Ashwini@123";
 	XSSFSheet login = null;
 
-
-	@Parameters("browser")
+	@Parameters({"browser","URL"})
 	@BeforeClass
-	public void init(String browser) throws IOException
+	public void init(String browser,String URL) throws IOException
 	{ 
 		driver = openBrowser(browser);
 		UI = new SeleniumUIUtils(driver);
-		driver.get("http://vrad-client.eastus.azurecontainer.io/");	
+		driver.get(URL);	
 		driver.manage().window().maximize();
 		CU = new CommonUtils(driver);
 		login = readSheet("Login");
@@ -70,7 +69,6 @@ public class TSDashboard extends BaseClass {
 	public void preSetup() throws IOException {
 		System.out.println("Before test");
 		//below is the name of the report.So here the name is Login Demo.
-		
 
 		CU.validSignIn(driver, login);
 
@@ -79,7 +77,7 @@ public class TSDashboard extends BaseClass {
 
 	@Test(priority=0)
 	public void VerifySummaryPageRecordscorrespondToShowingDate() throws InterruptedException {
-		
+
 		logger = report.startTest("VerifySummaryPageRecordscorrespondToShowingDate Report");
 
 		//verifying the URL
@@ -101,9 +99,9 @@ public class TSDashboard extends BaseClass {
 
 		UI.selectDropDownByValueUsingAttribute(dashboard.optionsShowingListBox(), "90D", "data-value");
 		logger.log(LogStatus.INFO, "selecting a value");
-		
-		
-        UI.waitForElementVisibility(dashboard.paginationLastPage(), driver);
+
+
+		UI.waitForElementVisibility(dashboard.paginationLastPage(), driver);
 		//clciking the pagination last page icon
 		if(UI.isEnabled(dashboard.paginationLastPage()))
 		{
@@ -114,10 +112,10 @@ public class TSDashboard extends BaseClass {
 
 		//identifying the summary page table
 		WebElement SummaryTable;
-		
+
 		//SummaryTable=dashboard.summaryTable();
 		SummaryTable=UI.getElement(dashboard.summaryTable());
-		
+
 
 		//getting number of rows of that page table
 		WebElement TogetRows = driver.findElement(By.xpath("//table[@class='MuiTable-root css-1y4b4fj']/tbody"));
@@ -167,7 +165,7 @@ public class TSDashboard extends BaseClass {
 		Calendar lowerLimit=Calendar.getInstance();
 		lowerLimit.add(Calendar.DATE,-90);
 		System.out.println(lowerLimit.getTime());
-		
+
 		System.out.println(sdf.format(lowerLimit.getTime()));
 		String lowerLimitDate=sdf.format(lowerLimit.getTime());
 		logger.log(LogStatus.INFO, "Currenet Date minus number of days selected in showing "+lowerLimitDate);
@@ -215,7 +213,7 @@ public class TSDashboard extends BaseClass {
 
 
 		}//for
-		
+
 		UI.click(NP.ExpandCollapseButton());
 		logger.log(LogStatus.INFO, "clicked expand button");
 
@@ -224,13 +222,13 @@ public class TSDashboard extends BaseClass {
 
 	@Test(priority=1)
 	public void ActionsViewIconClick() throws InterruptedException {
-		
+
 		logger = report.startTest("Verify clicking view icon navigates to Status page Report");
 
 		//identifying the summary page table
-	/*	By SummaryTable;
+		/*	By SummaryTable;
 		SummaryTable=dashboard.summaryTable();
-	
+
 		//getting number of rows of that page table
 		WebElement TogetRows = driver.findElement(By.xpath(SummaryTable+"/tbody"));
 		List<WebElement>TotalRowsList = TogetRows.findElements(By.tagName("tr"));
@@ -242,7 +240,7 @@ public class TSDashboard extends BaseClass {
 		List<WebElement> TotalColsList = ToGetColumns.findElements(By.tagName("td"));
 		System.out.println("Total Number of Columns in the table are: "+TotalColsList.size());
 		int columnSize=TotalColsList.size();*/
-		
+
 		Assert.assertTrue(UI.isDisplayed(dashboard.expandShowingListBox()));
 		logger.log(LogStatus.PASS,"navigated to Dashboard page");
 
@@ -253,34 +251,34 @@ public class TSDashboard extends BaseClass {
 
 		UI.selectDropDownByValueUsingAttribute(dashboard.optionsShowingListBox(), "90D", "data-value");
 		logger.log(LogStatus.INFO, "selecting a value");
-		
-		
+
+
 		//identifying the summary page table
-				WebElement SummaryTable;
-				
-				//SummaryTable=dashboard.summaryTable();
-				SummaryTable=UI.getElement(dashboard.summaryTable());
-				
+		WebElement SummaryTable;
 
-				//getting number of rows of that page table
-				WebElement TogetRows = driver.findElement(By.xpath("//table[@class='MuiTable-root css-1y4b4fj']/tbody"));
-				//WebElement TogetRows = driver.findElement(By.xpath(dashboard.summaryTable()+"/tbody"));
-				//WebElement TogetRows = UI.getElement( dashboard.summaryTableBody());    
-				List<WebElement>TotalRowsList = TogetRows.findElements(By.tagName("tr"));
-				System.out.println("Total number of Rows in the table are : "+ TotalRowsList.size());
-				int rowSize=TotalRowsList.size();
-				logger.log(LogStatus.INFO, "Found number of rows in the page: "+rowSize);
+		//SummaryTable=dashboard.summaryTable();
+		SummaryTable=UI.getElement(dashboard.summaryTable());
 
-				//getting the no.of columns of that page table
-				//WebElement ToGetColumns = driver.findElement(By.xpath(SummaryTable+"/tbody/tr"));
-				WebElement ToGetColumns = UI.getElement( dashboard.summaryTableRow());
-				List<WebElement> TotalColsList = ToGetColumns.findElements(By.tagName("td"));
-				System.out.println("Total Number of Columns in the table are: "+TotalColsList.size());
-				int columnSize=TotalColsList.size();
-				logger.log(LogStatus.INFO, "Found number of columns in each row: "+columnSize);
+
+		//getting number of rows of that page table
+		WebElement TogetRows = driver.findElement(By.xpath("//table[@class='MuiTable-root css-1y4b4fj']/tbody"));
+		//WebElement TogetRows = driver.findElement(By.xpath(dashboard.summaryTable()+"/tbody"));
+		//WebElement TogetRows = UI.getElement( dashboard.summaryTableBody());    
+		List<WebElement>TotalRowsList = TogetRows.findElements(By.tagName("tr"));
+		System.out.println("Total number of Rows in the table are : "+ TotalRowsList.size());
+		int rowSize=TotalRowsList.size();
+		logger.log(LogStatus.INFO, "Found number of rows in the page: "+rowSize);
+
+		//getting the no.of columns of that page table
+		//WebElement ToGetColumns = driver.findElement(By.xpath(SummaryTable+"/tbody/tr"));
+		WebElement ToGetColumns = UI.getElement( dashboard.summaryTableRow());
+		List<WebElement> TotalColsList = ToGetColumns.findElements(By.tagName("td"));
+		System.out.println("Total Number of Columns in the table are: "+TotalColsList.size());
+		int columnSize=TotalColsList.size();
+		logger.log(LogStatus.INFO, "Found number of columns in each row: "+columnSize);
 
 		//we need to SentOn column.
-				List<WebElement> Column_Sent_on =UI.getElements(dashboard.selectingColumnSentOn());
+		List<WebElement> Column_Sent_on =UI.getElements(dashboard.selectingColumnSentOn());
 
 		//we need to get DispatchType/Preview
 		List<WebElement> DispatchMessagePreview = UI.getElements(dashboard.selectingDispatchMessagePreview());
@@ -291,24 +289,24 @@ public class TSDashboard extends BaseClass {
 		System.out.println(actions.size());
 		int rowIndex=2;	
 		Thread.sleep(2000);
-		
+
 		WebElement eye= actions.get(rowIndex);
 		//WebElement button = eye.findElement(By.xpath("//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeSmall css-carvac']"));
 		WebElement button = eye.findElement(dashboard.viewIconButton());
-	     button.click();
-					
+		button.click();
+
 		logger.log(LogStatus.INFO, "clicked view icon");
-		
+
 		UI.waitForElementVisibility(DD.getTitle(driver), driver);
-			
+
 		UI.getText(DD.getTitle(driver));
 		Assert.assertEquals("Dispatch Details",UI.getText(DD.getTitle(driver)));
-				
+
 		logger.log(LogStatus.PASS, "verified clicking view icon is navigating user to Dispatch details page." +UI.getText(DD.getTitle(driver)));
 
 		UI.click(DD.CrossSymbol(driver));
 		logger.log(LogStatus.INFO, "clicked cross button");
-		
+
 		UI.click(NP.ExpandCollapseButton());
 		logger.log(LogStatus.INFO, "clicked expand button");
 
@@ -316,19 +314,19 @@ public class TSDashboard extends BaseClass {
 	}	
 
 	@AfterMethod
-public void signout(ITestResult result) {
-		
+	public void signout(ITestResult result) {
+
 		if(result.getStatus() == ITestResult.FAILURE) {
 			String path = UI.takeSnapShot(driver, result.getName());
 			System.out.println("img path "+ path);
 			logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
-			
-		System.out.println("Entered After method");
-		
-	
-			}else if(result.getStatus() == ITestResult.SKIP) {
-			            logger.log(LogStatus.SKIP, "This test skipped");
-			        }
+
+			System.out.println("Entered After method");
+
+
+		}else if(result.getStatus() == ITestResult.SKIP) {
+			logger.log(LogStatus.SKIP, "This test skipped");
+		}
 		CU.Logout(driver);
 		report.endTest(logger);
 	}

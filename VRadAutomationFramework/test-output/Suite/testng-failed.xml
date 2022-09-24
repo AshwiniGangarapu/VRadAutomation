@@ -7,21 +7,19 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
+    <parameter name="URL" value="http://vrad-client.eastus.azurecontainer.io/"/>
     <classes>
-      <class name="com.tests.TSNavigationPanel">
+      <class name="com.tests.TSLogin">
         <methods>
-          <include name="init"/>
-          <include name="VerifyExpandCollapse"/>
-          <include name="verifyUserAccountIconOnExpand"/>
-          <include name="verifyAllIconsOnCollapse"/>
-          <include name="setUp"/>
+          <include name="SignIn"/>
+          <include name="teardown"/>
           <include name="signout"/>
           <include name="closeApplication"/>
-          <include name="teardown"/>
+          <include name="init"/>
+          <include name="Setup"/>
           <include name="start"/>
-          <include name="verifyIconsOnExpandCorrespondingToRoles"/>
         </methods>
-      </class> <!-- com.tests.TSNavigationPanel -->
+      </class> <!-- com.tests.TSLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

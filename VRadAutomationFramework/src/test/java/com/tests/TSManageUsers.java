@@ -26,7 +26,7 @@ import com.utils.CommonUtils;
 import com.utils.SeleniumUIUtils;
 
 public class TSManageUsers extends BaseClass{
-	
+
 	static WebDriver driver = null;
 	SeleniumUIUtils UI = null;
 	CommonUtils CU = null;
@@ -38,13 +38,15 @@ public class TSManageUsers extends BaseClass{
 	String UserName="ashwini.g@sstech.us";
 	//String Password="Ashwini@123";
 
-	@Parameters("browser")
+
+
+	@Parameters({"browser","URL"})
 	@BeforeClass
-	public void init(String browser) throws IOException
+	public void init(String browser,String URL) throws IOException
 	{ 
 		driver = openBrowser(browser);
 		UI = new SeleniumUIUtils(driver);
-		driver.get("http://vrad-client.eastus.azurecontainer.io/");	
+		driver.get(URL);	
 		driver.manage().window().maximize();
 		CU = new CommonUtils(driver);
 		login = readSheet("Login");
@@ -54,15 +56,15 @@ public class TSManageUsers extends BaseClass{
 	public void setUp() throws IOException {		
 		System.out.println("Before test");
 		//below is the name of the report.So here the name is Login Demo.
-		
+
 		CU.validSignIn(driver, login);
 	}
 
-	
-	
+
+
 	@Test
 	public void VerifyUsersCorrespondingToTheShowing() throws InterruptedException {
-		
+
 		logger = report.startTest("VRad UAT Verify users displayed correspond to the showing selected Report");
 
 		TSManageUsers mu=new TSManageUsers();
@@ -78,7 +80,7 @@ public class TSManageUsers extends BaseClass{
 		//manage users title not for reporting user
 		// driver.findElement(By.cssSelector(".MuiTypography-root.MuiTypography-subtitle1.css-g72m4a")).getText();
 		//div.jss15>h6
-		
+
 		//view users title        
 		driver.findElement(By.cssSelector(".MuiTypography-root.MuiTypography-subtitle1.css-g72m4a")).getText();
 
@@ -98,73 +100,73 @@ public class TSManageUsers extends BaseClass{
 		//clicking close icon on right side corner.    
 		driver.findElement(By.cssSelector("[class=\"MuiButtonBase-root MuiIconButton-root MuiIconButton-colorDark MuiIconButton-sizeMedium css-gfip7b\"]>svg[data-testid=\"CloseIcon\"]")).click();       
 		//  $('[class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorDark MuiIconButton-sizeMedium css-gfip7b"]>svg[data-testid="CloseIcon"]') 
-		
+
 		Thread.sleep(1000);
 	}
-	
+
 	@Test(enabled=false)
 	public void VerifyUsersRolesAccessiblity() throws Exception {		
-	
+
 		TSManageUsers mu=new TSManageUsers();
-    String roleIdentified= CU.getRoles(UserName,driver);
-	    
-	    if(roleIdentified.equals("A")) {
-	    
-	    	Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"EditIcon\"]")).isDisplayed());
-	    	Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"DeleteOutlineIcon\"]")).isDisplayed());
-	    	System.out.println("verified the accessbility of Admin user");
-	    	
-	    }else if(roleIdentified.equals("R")) {
-	    	
-	       	CU.DeleteIconAvailable();
-	    	CU.EditIconAvailable();
-	    	
-	       	System.out.println("verified the accessbility of Reporting user");
-	    	
-	    }else if(roleIdentified.equals("D")) {
-	    	
-	    	CU.DeleteIconAvailable();
-	    	CU.EditIconAvailable();
-	    	
-	       	System.out.println("verified the accessbility of Dispatching user");
-	    }   
-	    
-	  		
+		String roleIdentified= CU.getRoles(UserName,driver);
+
+		if(roleIdentified.equals("A")) {
+
+			Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"EditIcon\"]")).isDisplayed());
+			Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"DeleteOutlineIcon\"]")).isDisplayed());
+			System.out.println("verified the accessbility of Admin user");
+
+		}else if(roleIdentified.equals("R")) {
+
+			CU.DeleteIconAvailable();
+			CU.EditIconAvailable();
+
+			System.out.println("verified the accessbility of Reporting user");
+
+		}else if(roleIdentified.equals("D")) {
+
+			CU.DeleteIconAvailable();
+			CU.EditIconAvailable();
+
+			System.out.println("verified the accessbility of Dispatching user");
+		}   
+
+
 	}
-	
-	  public void EditIconAvailable() throws Exception  
-	    {         
-	      try   
-	      {    
-	        if(driver.findElement(By.cssSelector("[data-testid=\"EditIcon\"]")).isDisplayed())     
-	        {      
-	        	System.out.println("test case failed");
-	        	Assert.assertFalse(true);
-	        }    
-	      }      
-	      catch(Exception e)     
-	      {   
-	    	  System.out.println("test case passed");
-	       Assert.assertTrue(true);    
-	      }       
-	    }  
-	  
-	  public void DeleteIconAvailable() throws Exception  
-	    {         
-	      try   
-	      {    
-	        if(driver.findElement(By.cssSelector("[data-testid=\"DeleteOutlineIcon\"]")).isDisplayed())     
-	        {      
-	        	System.out.println("test case failed");
-	        	Assert.assertFalse(true);
-	        }    
-	      }      
-	      catch(Exception e)     
-	      {   
-	    	  System.out.println("test case passed");
-	       Assert.assertTrue(true);    
-	      }       
-	    }  
+
+	public void EditIconAvailable() throws Exception  
+	{         
+		try   
+		{    
+			if(driver.findElement(By.cssSelector("[data-testid=\"EditIcon\"]")).isDisplayed())     
+			{      
+				System.out.println("test case failed");
+				Assert.assertFalse(true);
+			}    
+		}      
+		catch(Exception e)     
+		{   
+			System.out.println("test case passed");
+			Assert.assertTrue(true);    
+		}       
+	}  
+
+	public void DeleteIconAvailable() throws Exception  
+	{         
+		try   
+		{    
+			if(driver.findElement(By.cssSelector("[data-testid=\"DeleteOutlineIcon\"]")).isDisplayed())     
+			{      
+				System.out.println("test case failed");
+				Assert.assertFalse(true);
+			}    
+		}      
+		catch(Exception e)     
+		{   
+			System.out.println("test case passed");
+			Assert.assertTrue(true);    
+		}       
+	}  
 
 	public void verifyShowingInActive(ExtentTest logger) throws InterruptedException {
 
@@ -196,7 +198,7 @@ public class TSManageUsers extends BaseClass{
 				logger.log(LogStatus.FAIL, "is active record");
 			}
 
-			}
+		}
 	}         
 
 	public void verifyShowingActive(ExtentTest logger) throws InterruptedException {
@@ -221,12 +223,12 @@ public class TSManageUsers extends BaseClass{
 
 			String allUserRecordsText=userRecords.get(i).getText();
 			logger.log(LogStatus.INFO, allUserRecordsText);
-			
+
 			Assert.assertTrue(allUserRecordsText.contains("Active"));
 			logger.log(LogStatus.PASS, "is active record");
 			if(allUserRecordsText.contains("Inactive")) {
 				Assert.assertFalse(allUserRecordsText.contains("Inactive"));
-			logger.log(LogStatus.FAIL, "is inactive record");
+				logger.log(LogStatus.FAIL, "is inactive record");
 			}
 		}
 	}    
@@ -264,27 +266,27 @@ public class TSManageUsers extends BaseClass{
 	}    
 
 
-@AfterMethod
-public void signout(ITestResult result) {
-	
-	if(result.getStatus() == ITestResult.FAILURE) {
-		String path = UI.takeSnapShot(driver, result.getName());
-		System.out.println("img path "+ path);
-		logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
-		
-	System.out.println("Entered After method");
-	
+	@AfterMethod
+	public void signout(ITestResult result) {
+
+		if(result.getStatus() == ITestResult.FAILURE) {
+			String path = UI.takeSnapShot(driver, result.getName());
+			System.out.println("img path "+ path);
+			logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
+
+			System.out.println("Entered After method");
+
 
 		}else if(result.getStatus() == ITestResult.SKIP) {
-		            logger.log(LogStatus.SKIP, "This test skipped");
-		        }
-	CU.Logout(driver);
-	report.endTest(logger);
-}
-@AfterClass
-public void teardown() {
-	driver.quit();
-}
-	
+			logger.log(LogStatus.SKIP, "This test skipped");
+		}
+		CU.Logout(driver);
+		report.endTest(logger);
+	}
+	@AfterClass
+	public void teardown() {
+		driver.quit();
+	}
+
 
 }

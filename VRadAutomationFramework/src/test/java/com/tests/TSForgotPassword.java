@@ -31,7 +31,7 @@ public class TSForgotPassword extends BaseClass{
 	ForgotPasswordPage forgotPwPage=new  ForgotPasswordPage();
 	ExtentTest logger;
 	LoginPage LP=new LoginPage();
-	
+
 	@Parameters({"browser","URL"})
 	@BeforeClass
 	public void init(String browser,String URL)
@@ -40,16 +40,16 @@ public class TSForgotPassword extends BaseClass{
 		UI = new SeleniumUIUtils(driver);
 		driver.get(URL);	
 		driver.manage().window().maximize();
-		
+
 	}
 	@BeforeMethod
 	public void preSetup() throws IOException {
 		System.out.println("Before test");
 		//below is the name of the report.So here the name is Login Demo.
 		logger = report.startTest("VRad UAT Forgot password navigation Report");
-						
+
 	}
-	
+
 
 	@Test()
 	public void forgotPassword() throws InterruptedException{
@@ -68,7 +68,7 @@ public class TSForgotPassword extends BaseClass{
 		//Click request a reset link	    
 		UI.click(forgotPwPage.requestAResetLink(driver));
 		logger.log(LogStatus.INFO, "clicked request a reset link");
-		
+
 		Assert.assertTrue(UI.isDisplayed(forgotPwPage.ClickHereToResend()));
 		logger.log(LogStatus.PASS, "click to resend is displayed");		
 
@@ -85,26 +85,26 @@ public class TSForgotPassword extends BaseClass{
 		//click return to login
 		UI.click(forgotPwPage.returnToLogin(driver));
 		logger.log(LogStatus.INFO, "clciked return to login");
-		
+
 		Assert.assertTrue(UI.isDisplayed(LP.userName(driver)));
 		logger.log(LogStatus.PASS, "Login page displayed on click return to login");
-		
+
 	}
-	
-public void signout(ITestResult result) {
-		
+
+	public void signout(ITestResult result) {
+
 		if(result.getStatus() == ITestResult.FAILURE) {
 			String path = UI.takeSnapShot(driver, result.getName());
 			System.out.println("img path "+ path);
 			logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
-			
-		System.out.println("Entered After method");
-		
-	
-			}else if(result.getStatus() == ITestResult.SKIP) {
-			            logger.log(LogStatus.SKIP, "This test skipped");
-			        }
-	
+
+			System.out.println("Entered After method");
+
+
+		}else if(result.getStatus() == ITestResult.SKIP) {
+			logger.log(LogStatus.SKIP, "This test skipped");
+		}
+
 		report.endTest(logger);
 	}
 
