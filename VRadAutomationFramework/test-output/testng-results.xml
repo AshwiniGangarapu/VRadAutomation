@@ -2,31 +2,36 @@
 <testng-results ignored="16" total="33" passed="16" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-21T17:12:53 IST" name="Suite" finished-at="2022-09-21T17:16:59 IST" duration-ms="246628">
+  <suite started-at="2022-09-24T14:59:25 IST" name="Suite" finished-at="2022-09-24T15:03:26 IST" duration-ms="240501">
     <groups>
     </groups>
-    <test started-at="2022-09-21T17:12:53 IST" name="Test" finished-at="2022-09-21T17:16:59 IST" duration-ms="246628">
+    <test started-at="2022-09-24T14:59:25 IST" name="Test" finished-at="2022-09-24T15:03:26 IST" duration-ms="240501">
       <class name="com.tests.TSDashboard">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:42 IST" name="init" finished-at="2022-09-21T17:13:47 IST" duration-ms="4307" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-24T15:00:35 IST" name="init" finished-at="2022-09-24T15:00:39 IST" duration-ms="4470" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://vrad-client.eastus.azurecontainer.io/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:47 IST" name="preSetup" finished-at="2022-09-21T17:13:49 IST" duration-ms="2001" status="PASS">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-24T15:00:39 IST" name="preSetup" finished-at="2022-09-24T15:00:41 IST" duration-ms="1978" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="VerifySummaryPageRecordscorrespondToShowingDate()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:49 IST" name="VerifySummaryPageRecordscorrespondToShowingDate" finished-at="2022-09-21T17:13:52 IST" duration-ms="3364" status="PASS">
+        <test-method signature="VerifySummaryPageRecordscorrespondToShowingDate()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-24T15:00:41 IST" name="VerifySummaryPageRecordscorrespondToShowingDate" finished-at="2022-09-24T15:00:46 IST" duration-ms="4425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySummaryPageRecordscorrespondToShowingDate -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:52 IST" name="signout" finished-at="2022-09-21T17:13:53 IST" duration-ms="1101" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-24T15:00:46 IST" name="signout" finished-at="2022-09-24T15:00:47 IST" duration-ms="1271" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +42,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:53 IST" name="preSetup" finished-at="2022-09-21T17:13:54 IST" duration-ms="1279" status="PASS">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-24T15:00:47 IST" name="preSetup" finished-at="2022-09-24T15:00:49 IST" duration-ms="1745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="ActionsViewIconClick()[pri:1, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:13:54 IST" name="ActionsViewIconClick" finished-at="2022-09-21T17:14:01 IST" duration-ms="6616" status="PASS">
+        <test-method signature="ActionsViewIconClick()[pri:1, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-24T15:00:49 IST" name="ActionsViewIconClick" finished-at="2022-09-24T15:00:55 IST" duration-ms="6302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ActionsViewIconClick -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:14:01 IST" name="signout" finished-at="2022-09-21T17:14:02 IST" duration-ms="1083" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-24T15:00:55 IST" name="signout" finished-at="2022-09-24T15:00:56 IST" duration-ms="1406" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,36 +61,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-21T17:14:02 IST" name="teardown" finished-at="2022-09-21T17:14:02 IST" duration-ms="192" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSDashboard@5524cca1]" started-at="2022-09-24T15:00:56 IST" name="teardown" finished-at="2022-09-24T15:00:56 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.tests.TSDashboard -->
       <class name="com.tests.TSNavigationPanel">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:12:52 IST" name="start" finished-at="2022-09-21T17:12:53 IST" duration-ms="557" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:25 IST" name="start" finished-at="2022-09-24T14:59:25 IST" duration-ms="554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:12:53 IST" name="init" finished-at="2022-09-21T17:13:00 IST" duration-ms="7252" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:25 IST" name="init" finished-at="2022-09-24T14:59:32 IST" duration-ms="6637" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://vrad-client.eastus.azurecontainer.io/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:00 IST" name="setUp" finished-at="2022-09-21T17:13:03 IST" duration-ms="2745" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:32 IST" name="setUp" finished-at="2022-09-24T14:59:35 IST" duration-ms="2944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyExpandCollapse()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:03 IST" name="VerifyExpandCollapse" finished-at="2022-09-21T17:13:03 IST" duration-ms="268" status="PASS">
+        <test-method signature="VerifyExpandCollapse()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:35 IST" name="VerifyExpandCollapse" finished-at="2022-09-24T14:59:35 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyExpandCollapse -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:03 IST" name="signout" finished-at="2022-09-21T17:13:04 IST" duration-ms="1124" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:35 IST" name="signout" finished-at="2022-09-24T14:59:36 IST" duration-ms="1205" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,15 +106,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:04 IST" name="setUp" finished-at="2022-09-21T17:13:06 IST" duration-ms="1498" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:36 IST" name="setUp" finished-at="2022-09-24T14:59:38 IST" duration-ms="1192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAllIconsOnCollapse()[pri:1, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:06 IST" name="verifyAllIconsOnCollapse" finished-at="2022-09-21T17:13:10 IST" duration-ms="4025" status="PASS">
+        <test-method signature="verifyAllIconsOnCollapse()[pri:1, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:38 IST" name="verifyAllIconsOnCollapse" finished-at="2022-09-24T14:59:56 IST" duration-ms="18673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllIconsOnCollapse -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:10 IST" name="signout" finished-at="2022-09-21T17:13:11 IST" duration-ms="1125" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:56 IST" name="signout" finished-at="2022-09-24T14:59:57 IST" duration-ms="1317" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,15 +125,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:11 IST" name="setUp" finished-at="2022-09-21T17:13:12 IST" duration-ms="1376" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:57 IST" name="setUp" finished-at="2022-09-24T14:59:59 IST" duration-ms="1913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserAccountIconOnExpand()[pri:2, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:12 IST" name="verifyUserAccountIconOnExpand" finished-at="2022-09-21T17:13:13 IST" duration-ms="364" status="PASS">
+        <test-method signature="verifyUserAccountIconOnExpand()[pri:2, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T14:59:59 IST" name="verifyUserAccountIconOnExpand" finished-at="2022-09-24T15:00:02 IST" duration-ms="2425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserAccountIconOnExpand -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:13 IST" name="signout" finished-at="2022-09-21T17:13:14 IST" duration-ms="1144" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T15:00:02 IST" name="signout" finished-at="2022-09-24T15:00:03 IST" duration-ms="1234" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,15 +144,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:14 IST" name="setUp" finished-at="2022-09-21T17:13:15 IST" duration-ms="1284" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T15:00:03 IST" name="setUp" finished-at="2022-09-24T15:00:05 IST" duration-ms="1919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyIconsOnExpandCorrespondingToRoles()[pri:3, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:15 IST" name="verifyIconsOnExpandCorrespondingToRoles" finished-at="2022-09-21T17:13:34 IST" duration-ms="18599" status="PASS">
+        <test-method signature="verifyIconsOnExpandCorrespondingToRoles()[pri:3, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T15:00:05 IST" name="verifyIconsOnExpandCorrespondingToRoles" finished-at="2022-09-24T15:00:27 IST" duration-ms="21882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIconsOnExpandCorrespondingToRoles -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:34 IST" name="signout" finished-at="2022-09-21T17:13:35 IST" duration-ms="1117" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T15:00:27 IST" name="signout" finished-at="2022-09-24T15:00:28 IST" duration-ms="1275" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -153,36 +163,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:13:35 IST" name="teardown" finished-at="2022-09-21T17:13:35 IST" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T15:00:28 IST" name="teardown" finished-at="2022-09-24T15:00:28 IST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-21T17:17:00 IST" name="closeApplication" finished-at="2022-09-21T17:17:00 IST" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.tests.TSNavigationPanel@48075da3]" started-at="2022-09-24T15:03:26 IST" name="closeApplication" finished-at="2022-09-24T15:03:26 IST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- com.tests.TSNavigationPanel -->
       <class name="com.tests.TSLogin">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:46 IST" name="init" finished-at="2022-09-21T17:14:50 IST" duration-ms="4499" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:01:36 IST" name="init" finished-at="2022-09-24T15:01:39 IST" duration-ms="3756" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://vrad-client.eastus.azurecontainer.io/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:50 IST" name="Setup" finished-at="2022-09-21T17:14:50 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="InvalidSignIn()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:50 IST" name="InvalidSignIn" description="This TC will perform login with invalid password and verifies the error message." finished-at="2022-09-21T17:14:52 IST" duration-ms="1852" status="PASS">
+        <test-method signature="InvalidSignIn()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:01:39 IST" name="InvalidSignIn" description="This TC will perform login with invalid password and verifies the error message." finished-at="2022-09-24T15:01:41 IST" duration-ms="1639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidSignIn -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:52 IST" name="signout" finished-at="2022-09-21T17:14:52 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:01:39 IST" name="Setup" finished-at="2022-09-24T15:01:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="VerifyPasswordVisibility()[pri:1, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:01:41 IST" name="VerifyPasswordVisibility" description="This TC will verify the functionality of view icon in password field" finished-at="2022-09-24T15:01:42 IST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPasswordVisibility -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:01:41 IST" name="signout" finished-at="2022-09-24T15:01:41 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -190,67 +209,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Input must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Input must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
-at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:97)
-at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:88)
-at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:21)
-at com.utils.SeleniumUIUtils.click(SeleniumUIUtils.java:57)
-at com.utils.CommonUtils.Logout(CommonUtils.java:93)
-at com.tests.TSLogin.signout(TSLogin.java:165)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method signature="VerifyPasswordVisibility()[pri:1, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:52 IST" name="VerifyPasswordVisibility" description="This TC will verify the functionality of view icon in password field" finished-at="2022-09-21T17:14:53 IST" duration-ms="486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPasswordVisibility -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:52 IST" name="Setup" finished-at="2022-09-21T17:14:52 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:01:41 IST" name="Setup" finished-at="2022-09-24T15:01:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:53 IST" name="signout" finished-at="2022-09-21T17:14:53 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:01:42 IST" name="Setup" finished-at="2022-09-24T15:01:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:01:42 IST" name="signout" finished-at="2022-09-24T15:01:42 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -258,74 +228,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Input must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Input must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
-at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:97)
-at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:88)
-at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:21)
-at com.utils.SeleniumUIUtils.click(SeleniumUIUtils.java:57)
-at com.utils.CommonUtils.Logout(CommonUtils.java:93)
-at com.tests.TSLogin.signout(TSLogin.java:165)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:53 IST" name="Setup" finished-at="2022-09-21T17:14:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="SignIn()[pri:2, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:14:53 IST" name="SignIn" description="This TC will perform valid login" finished-at="2022-09-21T17:15:44 IST" duration-ms="50948" status="FAIL">
+        <test-method signature="SignIn()[pri:2, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:01:42 IST" name="SignIn" description="This TC will perform valid login" finished-at="2022-09-24T15:02:13 IST" duration-ms="31024" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@9443150 (tried for 50 second(s) with 15 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@5dc09bca (tried for 30 second(s) with 15 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@9443150 (tried for 50 second(s) with 15 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@5dc09bca (tried for 30 second(s) with 15 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:24)
 at com.utils.SeleniumUIUtils.isDisplayed(SeleniumUIUtils.java:118)
-at com.tests.TSLogin.SignIn(TSLogin.java:90)
+at com.tests.TSLogin.SignIn(TSLogin.java:83)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -360,9 +277,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'SSTINADMLP1150', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f04ddd4465df39ab4b984ff2c025dabf, findElement {using=css selector, value=#demo-simple-select}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ashwini.g\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:60876}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60876/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f04ddd4465df39ab4b984ff2c025dabf
+Command: [dd841857281611d50bfbe41067627072, findElement {using=css selector, value=#demo-simple-select}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ashwini.g\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:64087}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64087/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd841857281611d50bfbe41067627072
 at jdk.internal.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -388,7 +305,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignIn -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:15:44 IST" name="signout" finished-at="2022-09-21T17:15:44 IST" duration-ms="636" status="FAIL">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:02:13 IST" name="signout" finished-at="2022-09-24T15:02:13 IST" duration-ms="548" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -396,84 +313,40 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Input must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Input must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
-at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:97)
-at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:88)
-at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:21)
-at com.utils.SeleniumUIUtils.click(SeleniumUIUtils.java:57)
-at com.utils.CommonUtils.Logout(CommonUtils.java:93)
-at com.tests.TSLogin.signout(TSLogin.java:165)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-21T17:15:44 IST" name="teardown" finished-at="2022-09-21T17:15:45 IST" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSLogin@353352b6]" started-at="2022-09-24T15:02:13 IST" name="teardown" finished-at="2022-09-24T15:02:13 IST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.tests.TSLogin -->
       <class name="com.tests.TSNewDispatch">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:02 IST" name="init" finished-at="2022-09-21T17:14:07 IST" duration-ms="4589" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-24T15:00:56 IST" name="init" finished-at="2022-09-24T15:01:01 IST" duration-ms="4244" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://vrad-client.eastus.azurecontainer.io/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:07 IST" name="setUp" finished-at="2022-09-21T17:14:09 IST" duration-ms="2019" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-24T15:01:01 IST" name="setUp" finished-at="2022-09-24T15:01:03 IST" duration-ms="1812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SendDispatch()[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:09 IST" name="SendDispatch" description="This TC will perform a positve flow towards send Dispatch with custom message" finished-at="2022-09-21T17:14:45 IST" duration-ms="35710" status="PASS">
+        <test-method signature="SendDispatch()[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-24T15:01:03 IST" name="SendDispatch" description="This TC will perform a positve flow towards send Dispatch with custom message" finished-at="2022-09-24T15:01:34 IST" duration-ms="31771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SendDispatch -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:45 IST" name="signout" finished-at="2022-09-21T17:14:46 IST" duration-ms="1279" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-24T15:01:34 IST" name="signout" finished-at="2022-09-24T15:01:35 IST" duration-ms="1180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -484,32 +357,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-21T17:14:46 IST" name="teardown" finished-at="2022-09-21T17:14:46 IST" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSNewDispatch@48bb62]" started-at="2022-09-24T15:01:35 IST" name="teardown" finished-at="2022-09-24T15:01:36 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.tests.TSNewDispatch -->
       <class name="com.tests.TSManageUsers">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:17 IST" name="init" finished-at="2022-09-21T17:16:22 IST" duration-ms="4502" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-24T15:02:45 IST" name="init" finished-at="2022-09-24T15:02:50 IST" duration-ms="4202" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://vrad-client.eastus.azurecontainer.io/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:22 IST" name="setUp" finished-at="2022-09-21T17:16:24 IST" duration-ms="1993" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-24T15:02:50 IST" name="setUp" finished-at="2022-09-24T15:02:52 IST" duration-ms="2011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyUsersCorrespondingToTheShowing()[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:24 IST" name="VerifyUsersCorrespondingToTheShowing" finished-at="2022-09-21T17:16:35 IST" duration-ms="11502" status="PASS">
+        <test-method signature="VerifyUsersCorrespondingToTheShowing()[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-24T15:02:52 IST" name="VerifyUsersCorrespondingToTheShowing" finished-at="2022-09-24T15:03:03 IST" duration-ms="11368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUsersCorrespondingToTheShowing -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:35 IST" name="signout" finished-at="2022-09-21T17:16:36 IST" duration-ms="1193" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-24T15:03:03 IST" name="signout" finished-at="2022-09-24T15:03:04 IST" duration-ms="1163" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -520,32 +398,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-21T17:16:36 IST" name="teardown" finished-at="2022-09-21T17:16:36 IST" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSManageUsers@402c4085]" started-at="2022-09-24T15:03:04 IST" name="teardown" finished-at="2022-09-24T15:03:04 IST" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.tests.TSManageUsers -->
       <class name="com.tests.TSManageTemplates">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:45 IST" name="init" finished-at="2022-09-21T17:15:48 IST" duration-ms="3827" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:13 IST" name="init" finished-at="2022-09-24T15:02:18 IST" duration-ms="4790" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://vrad-client.eastus.azurecontainer.io/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:48 IST" name="setUp" finished-at="2022-09-21T17:15:50 IST" duration-ms="1963" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:18 IST" name="setUp" finished-at="2022-09-24T15:02:20 IST" duration-ms="1902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyTitle()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:50 IST" name="VerifyTitle" finished-at="2022-09-21T17:15:51 IST" duration-ms="926" status="PASS">
+        <test-method signature="VerifyTitle()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:20 IST" name="VerifyTitle" finished-at="2022-09-24T15:02:21 IST" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTitle -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:51 IST" name="signout" finished-at="2022-09-21T17:15:52 IST" duration-ms="1127" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:21 IST" name="signout" finished-at="2022-09-24T15:02:22 IST" duration-ms="1069" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -556,15 +439,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:52 IST" name="setUp" finished-at="2022-09-21T17:15:54 IST" duration-ms="1081" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:22 IST" name="setUp" finished-at="2022-09-24T15:02:23 IST" duration-ms="1103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyCreateTemplate()[pri:1, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:54 IST" name="VerifyCreateTemplate" finished-at="2022-09-21T17:15:55 IST" duration-ms="1372" status="PASS">
+        <test-method signature="VerifyCreateTemplate()[pri:1, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:23 IST" name="VerifyCreateTemplate" finished-at="2022-09-24T15:02:24 IST" duration-ms="1461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCreateTemplate -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:55 IST" name="signout" finished-at="2022-09-21T17:15:56 IST" duration-ms="1073" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:24 IST" name="signout" finished-at="2022-09-24T15:02:25 IST" duration-ms="993" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -575,15 +458,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:56 IST" name="setUp" finished-at="2022-09-21T17:15:57 IST" duration-ms="1314" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:25 IST" name="setUp" finished-at="2022-09-24T15:02:26 IST" duration-ms="1278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyUsersRolesAccessiblity()[pri:2, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:15:57 IST" name="VerifyUsersRolesAccessiblity" finished-at="2022-09-21T17:16:16 IST" duration-ms="18490" status="PASS">
+        <test-method signature="VerifyUsersRolesAccessiblity()[pri:2, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:26 IST" name="VerifyUsersRolesAccessiblity" finished-at="2022-09-24T15:02:44 IST" duration-ms="17554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUsersRolesAccessiblity -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:16:16 IST" name="signout" finished-at="2022-09-21T17:16:17 IST" duration-ms="1102" status="FAIL">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:44 IST" name="signout" finished-at="2022-09-24T15:02:45 IST" duration-ms="1044" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -598,10 +481,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'SSTINADMLP1150', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6665a29c6154e707125a1ae6eb234ccc, clickElement {id=ef9191c9-e1ae-4483-9c55-a097e1d4b94f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ashwini.g\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:60938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60938/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (6665a29c6154e707125a1ae6eb234ccc)] -> xpath: //div[@class='MuiListItemText-root MuiListItemText-multiline css-1k0uu2f']]
-Session ID: 6665a29c6154e707125a1ae6eb234ccc]]>
+Command: [ae9aeecd05964ad4c441ca3bd51d623b, clickElement {id=585feb53-57f5-4de3-b0f9-412c73a03b4d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ashwini.g\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:64137}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ae9aeecd05964ad4c441ca3bd51d623b)] -> xpath: //div[@class='MuiListItemText-root MuiListItemText-multiline css-1k0uu2f']]
+Session ID: ae9aeecd05964ad4c441ca3bd51d623b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="MuiListItemText-root MuiListItemText-multiline css-1k0uu2f">...</div> is not clickable at point (124, 584). Other element would receive the click: <div class="tss-1qtl85h-MUIDataTableBodyCell-root tss-1vd39vz-MUIDataTableBodyCell-stackedCommon tss-11ncqdm-MUIDataTableBodyCell-responsiveStackedSmall">...</div>
@@ -609,10 +492,10 @@ Session ID: 6665a29c6154e707125a1ae6eb234ccc]]>
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'SSTINADMLP1150', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6665a29c6154e707125a1ae6eb234ccc, clickElement {id=ef9191c9-e1ae-4483-9c55-a097e1d4b94f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ashwini.g\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:60938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60938/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (6665a29c6154e707125a1ae6eb234ccc)] -> xpath: //div[@class='MuiListItemText-root MuiListItemText-multiline css-1k0uu2f']]
-Session ID: 6665a29c6154e707125a1ae6eb234ccc
+Command: [ae9aeecd05964ad4c441ca3bd51d623b, clickElement {id=585feb53-57f5-4de3-b0f9-412c73a03b4d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ashwini.g\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:64137}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64137/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ae9aeecd05964ad4c441ca3bd51d623b)] -> xpath: //div[@class='MuiListItemText-root MuiListItemText-multiline css-1k0uu2f']]
+Session ID: ae9aeecd05964ad4c441ca3bd51d623b
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -628,8 +511,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
 at com.utils.SeleniumUIUtils.click(SeleniumUIUtils.java:57)
-at com.utils.CommonUtils.Logout(CommonUtils.java:93)
-at com.tests.TSManageTemplates.signout(TSManageTemplates.java:217)
+at com.utils.CommonUtils.Logout(CommonUtils.java:87)
+at com.tests.TSManageTemplates.signout(TSManageTemplates.java:222)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -669,32 +552,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-21T17:16:17 IST" name="teardown" finished-at="2022-09-21T17:16:17 IST" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSManageTemplates@57a78e3]" started-at="2022-09-24T15:02:45 IST" name="teardown" finished-at="2022-09-24T15:02:45 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.tests.TSManageTemplates -->
       <class name="com.tests.TSManageRecipients">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:36 IST" name="init" finished-at="2022-09-21T17:16:41 IST" duration-ms="4264" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-24T15:03:04 IST" name="init" finished-at="2022-09-24T15:03:08 IST" duration-ms="3946" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://vrad-client.eastus.azurecontainer.io/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:41 IST" name="setUp" finished-at="2022-09-21T17:16:43 IST" duration-ms="1815" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-24T15:03:08 IST" name="setUp" finished-at="2022-09-24T15:03:10 IST" duration-ms="1807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyCreateRecipient()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:43 IST" name="VerifyCreateRecipient" finished-at="2022-09-21T17:16:49 IST" duration-ms="5986" status="PASS">
+        <test-method signature="VerifyCreateRecipient()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-24T15:03:10 IST" name="VerifyCreateRecipient" finished-at="2022-09-24T15:03:15 IST" duration-ms="5426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCreateRecipient -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:49 IST" name="signout" finished-at="2022-09-21T17:16:50 IST" duration-ms="1090" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-24T15:03:15 IST" name="signout" finished-at="2022-09-24T15:03:17 IST" duration-ms="1105" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -705,15 +593,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:50 IST" name="setUp" finished-at="2022-09-21T17:16:51 IST" duration-ms="1344" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-24T15:03:17 IST" name="setUp" finished-at="2022-09-24T15:03:18 IST" duration-ms="1226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifySelectingRecordAndClickingEditRetrivesExactRecord()[pri:1, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:51 IST" name="VerifySelectingRecordAndClickingEditRetrivesExactRecord" finished-at="2022-09-21T17:16:58 IST" duration-ms="6922" status="PASS">
+        <test-method signature="VerifySelectingRecordAndClickingEditRetrivesExactRecord()[pri:1, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-24T15:03:18 IST" name="VerifySelectingRecordAndClickingEditRetrivesExactRecord" finished-at="2022-09-24T15:03:24 IST" duration-ms="6721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySelectingRecordAndClickingEditRetrivesExactRecord -->
-        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:58 IST" name="signout" finished-at="2022-09-21T17:16:59 IST" duration-ms="1377" status="PASS">
+        <test-method is-config="true" signature="signout(org.testng.ITestResult)[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-24T15:03:24 IST" name="signout" finished-at="2022-09-24T15:03:26 IST" duration-ms="1040" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -724,32 +612,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-21T17:16:59 IST" name="teardown" finished-at="2022-09-21T17:16:59 IST" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tests.TSManageRecipients@2767e23c]" started-at="2022-09-24T15:03:26 IST" name="teardown" finished-at="2022-09-24T15:03:26 IST" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.tests.TSManageRecipients -->
       <class name="com.tests.TSForgotPassword">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-21T17:13:35 IST" name="init" finished-at="2022-09-21T17:13:40 IST" duration-ms="5453" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-24T15:00:28 IST" name="init" finished-at="2022-09-24T15:00:33 IST" duration-ms="4625" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://vrad-client.eastus.azurecontainer.io/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-21T17:13:40 IST" name="preSetup" finished-at="2022-09-21T17:13:40 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preSetup -->
-        <test-method signature="forgotPassword()[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-21T17:13:40 IST" name="forgotPassword" finished-at="2022-09-21T17:13:42 IST" duration-ms="1634" status="PASS">
+        <test-method signature="forgotPassword()[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-24T15:00:33 IST" name="forgotPassword" finished-at="2022-09-24T15:00:34 IST" duration-ms="1524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-21T17:13:42 IST" name="tearDown" finished-at="2022-09-21T17:13:42 IST" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-24T15:00:33 IST" name="preSetup" finished-at="2022-09-24T15:00:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.TSForgotPassword@273444fe]" started-at="2022-09-24T15:00:34 IST" name="tearDown" finished-at="2022-09-24T15:00:35 IST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

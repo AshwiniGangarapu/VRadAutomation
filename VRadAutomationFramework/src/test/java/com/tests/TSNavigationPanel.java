@@ -31,21 +31,20 @@ public class TSNavigationPanel extends BaseClass{
 	SeleniumUIUtils UI = null;
 	CommonUtils CU = null;
 	NavigationPanelPage NP=new NavigationPanelPage();
-	
+
 	XSSFSheet login = null;
 
 	String currentURL;
-	String Login="http://vrad-client.eastus.azurecontainer.io/login";
-	String UserName;
 
 
-	@Parameters("browser")
+
+	@Parameters({"browser","URL"})
 	@BeforeClass
-	public void init(String browser) throws IOException
+	public void init(String browser,String URL) throws IOException
 	{ 
 		driver = openBrowser(browser);
 		UI = new SeleniumUIUtils(driver);
-		driver.get("http://vrad-client.eastus.azurecontainer.io/");	
+		driver.get(URL);	
 		driver.manage().window().maximize();
 		CU = new CommonUtils(driver);
 		login = readSheet("Login");
@@ -54,7 +53,7 @@ public class TSNavigationPanel extends BaseClass{
 	@BeforeMethod
 	public void setUp() throws IOException {		
 
-	 CU.validSignIn(driver, login);
+		CU.validSignIn(driver, login);
 	}
 
 
@@ -94,16 +93,16 @@ public class TSNavigationPanel extends BaseClass{
 			logger.log(LogStatus.PASS, "verified mouse hover text for Recipients");	
 
 		}
-		
+
 		UI.waitForElementVisibility(NP.CollapsedManageUserButton(driver),driver);
 
 		//verifying mouse hover text Manage Users
 		UI.mouseHover(NP.CollapsedManageUserButton(driver));
 		logger.log(LogStatus.INFO, "mouse hover on Manage users button");
-		
+
 		UI.waitForElementVisibility(NP.MouseHoverTextForCollapsedButton(driver),driver);
-		
-		
+
+
 		Thread.sleep(1000);
 		if(UI.isDisplayed(NP.MouseHoverTextForCollapsedButton(driver))) {
 
@@ -113,15 +112,16 @@ public class TSNavigationPanel extends BaseClass{
 			logger.log(LogStatus.PASS, "verified mouse hover text for Users");
 
 		}
-		
+
 		UI.waitForElementVisibility(NP.CollapsedManageTemplatesButton(driver),driver);
 		//wait for text
 		//verifying mouse hover text Manage Templates
 		UI.mouseHover(NP.CollapsedManageTemplatesButton(driver));
 		logger.log(LogStatus.INFO, "mouse hover on Manage templates button");
-		
-		UI.waitForElementVisibility(NP.MouseHoverTextForCollapsedButton(driver),driver);
-		Thread.sleep(2000);
+
+		//UI.waitForElementVisibility(NP.MouseHoverTextForCollapsedButton(driver),driver);
+		//Thread.sleep(2000);
+		boolean b=UI.waitForTextPresentInElementLocated(NP.MouseHoverTextForCollapsedButton(driver),driver,"Manage Template");
 
 		if(UI.isDisplayed(NP.MouseHoverTextForCollapsedButton(driver))) {
 
@@ -131,6 +131,7 @@ public class TSNavigationPanel extends BaseClass{
 			logger.log(LogStatus.PASS, "verified mouse hover text for Templates");
 
 		}
+
 
 		UI.waitForElementVisibility(NP.ExpandCollapseButton(),driver);
 		//navigation panel expand.//just to logout properly.
@@ -182,10 +183,10 @@ public class TSNavigationPanel extends BaseClass{
 
 		logger = report.startTest("VRad UAT verifyIconsOnExpandCorrespondingToRoles Report");
 		//navigation panel expand
-		
+
 		String UserName = CU.getUserName(login);
 		logger.log(LogStatus.INFO,UserName+" is the user name");
-		
+
 		UI.click(NP.ExpandCollapseButton());
 		logger.log(LogStatus.INFO, "clicked expand button");
 
@@ -197,9 +198,9 @@ public class TSNavigationPanel extends BaseClass{
 			Assert.assertEquals(UI.getText(NP.CollapsedManageRecipientsButton(driver)),"Manage Recipient");
 			Assert.assertEquals(UI.getText(NP.CollapsedManageUserButton(driver)),"Manage Users");
 			Assert.assertEquals(UI.getText(NP.CollapsedManageTemplatesButton(driver)),"Manage Template");
-            
+
 			logger.log(LogStatus.PASS,"Admin role aaccess verified for the user");
-			
+
 		}else if(roleIdentified.equals("R")) {
 
 			String mrt=UI.getText(NP.CollapsedManageRecipientsButton(driver));
@@ -217,7 +218,7 @@ public class TSNavigationPanel extends BaseClass{
 			Assert.assertEquals(UI.getText(NP.CollapsedManageTemplatesButton(driver)),"View Template");
 
 			logger.log(LogStatus.PASS,"Dispatch user role aaccess verified for the user");
-			
+
 		}
 
 
@@ -225,18 +226,18 @@ public class TSNavigationPanel extends BaseClass{
 
 	@AfterMethod
 	public void signout(ITestResult result) {
-		
+
 		if(result.getStatus() == ITestResult.FAILURE) {
 			String path = UI.takeSnapShot(driver, result.getName());
 			System.out.println("img path "+ path);
 			logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
-			
-		System.out.println("Entered After method");
-		
-	
-			}else if(result.getStatus() == ITestResult.SKIP) {
-			            logger.log(LogStatus.SKIP, "This test skipped");
-			        }
+
+			System.out.println("Entered After method");
+
+
+		}else if(result.getStatus() == ITestResult.SKIP) {
+			logger.log(LogStatus.SKIP, "This test skipped");
+		}
 		CU.Logout(driver);
 		report.endTest(logger);
 	}

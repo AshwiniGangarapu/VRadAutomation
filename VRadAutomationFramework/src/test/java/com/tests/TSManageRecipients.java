@@ -35,61 +35,59 @@ public class TSManageRecipients extends BaseClass {
 	NavigationPanelPage NP = new NavigationPanelPage();
 
 	String currentURL;
-	String Login="http://vrad-client.eastus.azurecontainer.io/login";
-	String UserName="ashwini.g@sstech.us";
-	//String Password="Ashwini@123";
+
 	ExtentTest logger;
 	XSSFSheet login = null;
 	XSSFSheet recipient = null;
 
 
-	@Parameters("browser")
+	@Parameters({"browser","URL"})
 	@BeforeClass
-	public void init(String browser) throws IOException
+	public void init(String browser,String URL) throws IOException
 	{ 
 		driver = openBrowser(browser);
 		UI = new SeleniumUIUtils(driver);
-		driver.get("http://vrad-client.eastus.azurecontainer.io/");	
+		driver.get(URL);
 		driver.manage().window().maximize();
 		CU = new CommonUtils(driver);
 		login = readSheet("Login");
 		recipient = readSheet("Recipients");
 	}
-	
+
 
 	@BeforeMethod
 	public void setUp() throws IOException {		
 		System.out.println("Before test");
 		//below is the name of the report.So here the name is Login Demo.
-		
+
 		CU.validSignIn(driver, login);
 	}
 
-	
+
 	@Test(priority = 1)
 	public void VerifySelectingRecordAndClickingEditRetrivesExactRecord() throws InterruptedException {
-		
+
 		logger = report.startTest("VRad UAT Verify click edit on a record retrives exact record details Report");
-  
-          
-       // EXPAND NAVIGATION PANEL
-  		//driver.findElement(By.xpath("//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-colorDark MuiIconButton-sizeMedium css-gfip7b']")).click();
-  		UI.click(NP.ExpandCollapseButton());
-  		logger.log(LogStatus.INFO, "clicked expand button");	
-  		
-  		//Click manage recipients
-  		//driver.findElement(By.xpath("//div[@class='MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-n8fm4g']")).click();
-  		UI.click(MR.expandedManageRecipientsButton(driver));
-  		logger.log(LogStatus.INFO, "clicked expand button");
-        
-  		Thread.sleep(2000);
+
+
+		// EXPAND NAVIGATION PANEL
+		//driver.findElement(By.xpath("//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-colorDark MuiIconButton-sizeMedium css-gfip7b']")).click();
+		UI.click(NP.ExpandCollapseButton());
+		logger.log(LogStatus.INFO, "clicked expand button");	
+
+		//Click manage recipients
+		//driver.findElement(By.xpath("//div[@class='MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-n8fm4g']")).click();
+		UI.click(MR.expandedManageRecipientsButton(driver));
+		logger.log(LogStatus.INFO, "clicked expand button");
+
+		Thread.sleep(2000);
 		//getting all the rows in the recipients table.
 		List<WebElement> recRows = driver.findElements(By.xpath("//tr[starts-with(@data-testid, \"MUIDataTableBodyRow\")]"));
 		logger.log(LogStatus.INFO, "Got all rows from table recipients");
 		String RecordResham = null;
 		System.out.println(recRows.size());
 		System.out.println("before for loop");
-	
+
 		for(int i=0; i<recRows.size(); i++) {
 			System.out.println("entered for loop");
 			System.out.println(recRows.get(i).getText());
@@ -107,8 +105,8 @@ public class TSManageRecipients extends BaseClass {
 				//recRows.get(i)
 			}
 		}
-		            
-        Thread.sleep(4000);
+
+		Thread.sleep(4000);
 		//getting the sub tilte and verifying it.
 		String TitleEditRecipients=driver.findElement(By.cssSelector("div[class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-12nqbl7'] h6[class='MuiTypography-root MuiTypography-subtitle1 css-g72m4a']")).getText();
 		System.out.println(TitleEditRecipients);
@@ -128,11 +126,11 @@ public class TSManageRecipients extends BaseClass {
 
 		Assert.assertTrue(RecordResham.contains(driver.findElement(By.xpath("//input[@id='LastName']")).getAttribute("value")));
 		logger.log(LogStatus.PASS, "last name displayed matches the selected record");
-		
+
 		Assert.assertTrue(RecordResham.contains(driver.findElement(By.xpath("//input[@id='MobileNumber']")).getAttribute("value")));
 		logger.log(LogStatus.PASS, "phone number displayed matches the selected record");
 		System.out.println("Assert pass");
-		
+
 		//clicking cancel button
 		driver.findElement(By.xpath("//button[@class='MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-xuvwmr']")).click();
 		logger.log(LogStatus.INFO, "clicked Cancel button");
@@ -151,14 +149,14 @@ public class TSManageRecipients extends BaseClass {
 		//driver.findElement(By.xpath("//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-colorDark MuiIconButton-sizeMedium css-gfip7b']")).click();
 		UI.click(NP.ExpandCollapseButton());
 		logger.log(LogStatus.INFO, "clicked expand button");	
-		
+
 		//Click manage recipients
 		//driver.findElement(By.xpath("//div[@class='MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-n8fm4g']")).click();
 		UI.click(MR.expandedManageRecipientsButton(driver));
 		logger.log(LogStatus.INFO, "clicked expand button");	
 
 		UI.waitForElementVisibility(MR.createNewRecipient(driver), driver);
-		
+
 		//gettting the Main title
 		String TitleManageRecipients=UI.getText(MR.mainTitle(driver));
 		//String TitleManageRecipients=driver.findElement(By.xpath("//h6[@class='MuiTypography-root MuiTypography-subtitle1 css-g72m4a']")).getText();
@@ -180,79 +178,80 @@ public class TSManageRecipients extends BaseClass {
 		System.out.println(TitleCreateRecipients);
 		Assert.assertEquals("Create New Recipient",TitleCreateRecipients,"Create New Recipient");
 		logger.log(LogStatus.PASS, "verified the subtitle");
-		
+
 		UI.sendKeys(MR.recipientFirstName(driver),data.getDataAsString(recipient,"First Name", 1));
 		UI.sendKeys(MR.recipientLastName(driver),data.getDataAsString(recipient,"Last Name", 1));
 		UI.sendKeys(MR.recipientMobileNumber(driver),Double.toString(data.getDataAsNumeric(recipient,"Phone Number", 1)));	
 		UI.sendKeys(MR.recipientCountryCode(driver),Integer.toString((int)data.getDataAsNumeric(recipient,"Counrty Code", 1)));
-		
+
 		logger.log(LogStatus.INFO, "entered values from excel");		
-				
+
 		UI.click(MR.recipientStatus(driver));
 		UI.click(MR.recipientStatusActive(driver));
-		
+
 		UI.click(MR.recipientNotificationPreference(driver));
 		UI.click(MR.recipientNotificationText(driver));
-		
-		
+
+
 		UI.click(MR.recipientCancelButton(driver));
 		//driver.findElement(By.xpath("//button[@class='MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-xuvwmr']")).click();
 		logger.log(LogStatus.INFO, "clicked cancel button");
-		
+
 		UI.click(MR.recipientCrossSymbol(driver));
 		// $('.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorDark.MuiIconButton-sizeMedium.css-gfip7b>svg[data-testid="CloseIcon"]')
 		//driver.findElement(By.cssSelector(".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorDark.MuiIconButton-sizeMedium.css-gfip7b>svg[data-testid=\"CloseIcon\"]")).click();
 		logger.log(LogStatus.INFO, "clicked cross symbol");
-	
+
 	}
 
 
 	@Test(priority = 2,enabled=false)
-	public void VerifyUsersRolesAccessiblity() throws Exception {		
-				
-		String roleIdentified= CU.getRoles(UserName,driver);
-	    
-	    if(roleIdentified.equals("A")) {
-	    
-	    	Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"EditIcon\"]")).isDisplayed());
-	    	Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"DeleteOutlineIcon\"]")).isDisplayed());
-	    	Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"VisibilityOutlinedIcon\"]")).isDisplayed());
-	    	
-	    }else if(roleIdentified.equals("R")) {
-	    	
-	    	Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"EditIcon\"]")).isDisplayed());	    	  	
-	    	CU.DeleteIconAvailable();
-	    		    	
-	    }else if(roleIdentified.equals("D")) {	    	
-	    	
-	    	Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"VisibilityOutlinedIcon\"]")).isDisplayed());
-	    	CU.EditIconAvailable();
-	    	CU.DeleteIconAvailable();   
-	    }    
-		
+	public void VerifyUsersRolesAccessiblity() throws Exception {	
+
+
+		String roleIdentified= CU.getRoles(data.getDataAsString(login,"UserName", 2),driver);
+
+		if(roleIdentified.equals("A")) {
+
+			Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"EditIcon\"]")).isDisplayed());
+			Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"DeleteOutlineIcon\"]")).isDisplayed());
+			Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"VisibilityOutlinedIcon\"]")).isDisplayed());
+
+		}else if(roleIdentified.equals("R")) {
+
+			Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"EditIcon\"]")).isDisplayed());	    	  	
+			CU.DeleteIconAvailable();
+
+		}else if(roleIdentified.equals("D")) {	    	
+
+			Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"VisibilityOutlinedIcon\"]")).isDisplayed());
+			CU.EditIconAvailable();
+			CU.DeleteIconAvailable();   
+		}    
+
 	}
 
 
-@AfterMethod
-public void signout(ITestResult result) {
-	
-	if(result.getStatus() == ITestResult.FAILURE) {
-		String path = UI.takeSnapShot(driver, result.getName());
-		System.out.println("img path "+ path);
-		logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
-		
-	System.out.println("Entered After method");
-	
+	@AfterMethod
+	public void signout(ITestResult result) {
+
+		if(result.getStatus() == ITestResult.FAILURE) {
+			String path = UI.takeSnapShot(driver, result.getName());
+			System.out.println("img path "+ path);
+			logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
+
+			System.out.println("Entered After method");
+
 
 		}else if(result.getStatus() == ITestResult.SKIP) {
-		            logger.log(LogStatus.SKIP, "This test skipped");
-		        }
-	CU.Logout(driver);
-	report.endTest(logger);
-}
-@AfterClass
-public void teardown() {
-	driver.quit();
-}
-	
+			logger.log(LogStatus.SKIP, "This test skipped");
+		}
+		CU.Logout(driver);
+		report.endTest(logger);
+	}
+	@AfterClass
+	public void teardown() {
+		driver.quit();
+	}
+
 }

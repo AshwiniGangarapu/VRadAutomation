@@ -125,8 +125,13 @@ public boolean isEnabled(By element) {
     	 Assert.assertEquals(expText,element);
 	
     }
+    //explicit wait declared in selenium wait utils.
 	public WebElement waitForElementVisibility(By element, WebDriver driver) {
 		return wait.waitForElementVisisbility(driver, element);
+	}
+	
+	public boolean waitForTextPresentInElementLocated(By element, WebDriver driver, String text) {
+		return wait.waitForTextPresentInElementLocated(driver, element, text);
 	}
 	
 	

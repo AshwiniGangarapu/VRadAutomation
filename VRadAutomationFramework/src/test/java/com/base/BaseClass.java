@@ -15,6 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.config.PropertiesFile;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.utils.ExcelUtils;
@@ -22,6 +23,13 @@ import com.utils.ExcelUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
+	
+	
+	
+	public static String DashboardURL;
+	public static String LoginURL;
+	public static String ForgotPasswordURL;
+	public static String BaseURL;
 	
 	public static ExtentReports report;
 	// to mention the envireonment and configurations.
@@ -34,6 +42,8 @@ public class BaseClass {
 	@BeforeSuite
 	public void start() throws IOException {
 		
+		PropertiesFile.readPropertiesFile();// will read properties before starting suite.Will set those variables above.
+		System.out.println(DashboardURL);
 		//Extent report
 		String timeStamp = new SimpleDateFormat("dd-MM-YYYY_HH-mm-ss").format(new Date());
 		//it is append the time to the report name.The below line is doing it.
@@ -45,8 +55,7 @@ public class BaseClass {
 		
 		String path = System.getProperty("user.dir") + "\\src\\test\\resources\\data\\VRad_Automation_Data.xlsx";
 		workbook = data.getWorkbook(path);
-	}
-		
+	}		
 	
 	public XSSFSheet readSheet(String sheetName) throws IOException {
 		return data.getSheet(workbook, sheetName);
@@ -69,6 +78,7 @@ public class BaseClass {
 		
 		return driver;
 	}
+	
 	
 
 	@AfterSuite

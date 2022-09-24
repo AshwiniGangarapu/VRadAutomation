@@ -32,16 +32,10 @@ public class CommonUtils extends BaseClass {
 	LoginPage LP = new LoginPage();
 	ManageUsersPage MP=new ManageUsersPage();
 
-	String UserName;
-	
+	String UserName;	
 
 	static NavigationPanelPage NP = new NavigationPanelPage();
-
-	String Login="http://vrad-client.eastus.azurecontainer.io/login";
-	String Dashboard="http://vrad-client.eastus.azurecontainer.io/dashboard";
-
-
-
+	
 	public CommonUtils(WebDriver driver) {
 		this.driver= driver;
 	}
@@ -75,8 +69,8 @@ public class CommonUtils extends BaseClass {
 		//logger.log(LogStatus.INFO, "verified showing is displayed");
 
 		//verifying the URL
-
-		Assert.assertEquals(driver.getCurrentUrl(),Dashboard,driver.getCurrentUrl());
+		
+		Assert.assertEquals(driver.getCurrentUrl(),DashboardURL,driver.getCurrentUrl());
 		//logger.log(LogStatus.PASS, "verified that valid login navigating to dashboard URL");
 
 		//return UserName;
@@ -110,7 +104,7 @@ public class CommonUtils extends BaseClass {
 			//logger.log(LogStatus.INFO, "verified user name web element is displayed");   			
 
 			String currentURL=driver.getCurrentUrl();
-			UI.verifyURL(Login,currentURL);
+			UI.verifyURL(LoginURL,currentURL);
 			//	logger.log(LogStatus.INFO, "verified verified Login URL");
 			System.out.println("logout");
 	//	 }

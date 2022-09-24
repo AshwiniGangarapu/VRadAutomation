@@ -13,6 +13,7 @@
 	<test name="Test">
 	
 		<parameter name="browser" value="chrome" />
+		<parameter name="URL" value="http://vrad-client.eastus.azurecontainer.io/"/>
 		
 		<classes>
 					 
