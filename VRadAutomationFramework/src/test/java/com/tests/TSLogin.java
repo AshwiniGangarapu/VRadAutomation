@@ -24,6 +24,7 @@ import com.pom.LoginPage;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.utils.CommonUtils;
+import com.utils.ExcelUtils;
 import com.utils.SeleniumUIUtils; 
 
 public class TSLogin extends BaseClass{
@@ -59,11 +60,15 @@ public class TSLogin extends BaseClass{
 	@BeforeMethod
 	public void Setup() {
 		System.out.println("Before test");
+		data.readExcelDataToArray(sheet);
 
 	}
+	
+	
+	
 
 	@Test(description="This TC will perform valid login",priority = 2)
-	public void SignIn() throws InterruptedException{
+	public void SignIn() throws InterruptedException, IOException{
 
 		logger = report.startTest("VRad UAT Verify valid Login Report");
 
@@ -86,8 +91,18 @@ public class TSLogin extends BaseClass{
 		//verifying the URL
 		Assert.assertEquals(driver.getCurrentUrl(),DashboardURL,driver.getCurrentUrl());
 		logger.log(LogStatus.PASS, "verified that valid login navigating to dashboard URL");
+		
+			
+
+		//String path = System.getProperty("user.dir") + "\\src\\test\\resources\\data\\VRad_Automation_Data.xlsx";
+		
+		
+		//data.writeToExcel(path,"Login","Done");
+		
 
 	}
+	
+	
 
 	@Test(description="This TC will perform login with invalid password and verifies the error message.",priority = 0)
 	public void InvalidSignIn() throws InterruptedException{
@@ -114,7 +129,7 @@ public class TSLogin extends BaseClass{
 
 	}	
 
-	@Test(description="This TC will verify the functionality of view icon in password field",priority = 1)
+	@Test(description="This TC will verify the functionality of view icon in password field",priority = 1,enabled=false)
 	public void VerifyPasswordVisibility() throws InterruptedException {
 
 		logger = report.startTest("VRad UAT Verify password vissibility Report");

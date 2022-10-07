@@ -12,16 +12,20 @@
 	<!--test name="Test" parallel = "classes" thread-count = "3" -->
 	<test name="Test">
 	
-		<parameter name="browser" value="chrome" />
-		<parameter name="URL" value="http://vrad-client.eastus.azurecontainer.io/"/>
-		
+	<parameter name="browser" value="chrome" />
+    <parameter name="URL" value="http://vrad-client.eastus.azurecontainer.io/"/>
+	
+	<groups>
+	<run>
+	<include name="smoke"/>
+	</run>
+	</groups>
+			
 		<classes>
 					 
 		 <class name="com.tests.TSNavigationPanel" /> 
-		 <class name="com.tests.TSForgotPassword" />
 		 <class name="com.tests.TSDashboard" />	
 		 <class name="com.tests.TSNewDispatch" />
-		 <class name="com.tests.TSLogin" /> 
 		 <class name="com.tests.TSManageTemplates" />	
 		 <class name="com.tests.TSManageUsers" />
 	 	 <class name="com.tests.TSManageRecipients" />

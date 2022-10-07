@@ -37,7 +37,8 @@ public class NavigationPanelPage {
 	}
 	
 	public By ExpandedUserAccountButton(WebDriver driver) {
-	    return By.xpath("//div[@class='MuiListItemText-root MuiListItemText-multiline css-1k0uu2f']");
+	  //  return By.xpath("//div[@class='MuiListItemText-root MuiListItemText-multiline css-1k0uu2f']");
+	    return By.cssSelector(".MuiListItemText-root.MuiListItemText-multiline.css-1k0uu2f");
 	}
 	
 	public By UserAccountHoverText(WebDriver driver) {

@@ -62,7 +62,7 @@ public class TSManageUsers extends BaseClass{
 
 
 
-	@Test
+	@Test(groups= {"smoke"})
 	public void VerifyUsersCorrespondingToTheShowing() throws InterruptedException {
 
 		logger = report.startTest("VRad UAT Verify users displayed correspond to the showing selected Report");

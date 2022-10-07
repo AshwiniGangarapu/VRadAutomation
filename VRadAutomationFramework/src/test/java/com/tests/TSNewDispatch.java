@@ -63,7 +63,7 @@ public class TSNewDispatch extends BaseClass{
 		CU.validSignIn(driver, login);
 	}
 
-	@Test(description="This TC will perform a positve flow towards send Dispatch with custom message")
+	@Test(description="This TC will perform a positve flow towards send Dispatch with custom message",groups= {"smoke"})
 	public void SendDispatch() throws InterruptedException{
 
 		logger = report.startTest("VRad UAT Verify New Dispatch Report");

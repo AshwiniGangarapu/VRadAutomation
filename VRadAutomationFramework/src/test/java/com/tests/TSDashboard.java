@@ -75,7 +75,7 @@ public class TSDashboard extends BaseClass {
 	}
 
 
-	@Test(priority=0)
+	@Test(priority=0,groups= {"smoke","regression"})
 	public void VerifySummaryPageRecordscorrespondToShowingDate() throws InterruptedException {
 
 		logger = report.startTest("VerifySummaryPageRecordscorrespondToShowingDate Report");
@@ -220,7 +220,7 @@ public class TSDashboard extends BaseClass {
 
 	}//method
 
-	@Test(priority=1)
+	@Test(priority=1,groups= {"regression"})
 	public void ActionsViewIconClick() throws InterruptedException {
 
 		logger = report.startTest("Verify clicking view icon navigates to Status page Report");

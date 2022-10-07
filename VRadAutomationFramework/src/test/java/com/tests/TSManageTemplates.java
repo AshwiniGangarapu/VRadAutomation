@@ -92,7 +92,7 @@ public class TSManageTemplates extends BaseClass {
 
 	}	
 
-	@Test(priority=1)
+	@Test(priority=1,groups= {"smoke"})
 	public void VerifyCreateTemplate() throws InterruptedException {
 
 		logger = report.startTest("VRad UAT Verify creation of Template Report");
@@ -104,7 +104,8 @@ public class TSManageTemplates extends BaseClass {
 		logger.log(LogStatus.INFO, "clicked Manage Template button");
 		
 		UI.waitForElementVisibility(MT.createNewTemplateButton(driver), driver);
-
+		
+	
 		UI.click(MT.createNewTemplateButton(driver));
 		logger.log(LogStatus.INFO, "clicked Create Template button");
 
