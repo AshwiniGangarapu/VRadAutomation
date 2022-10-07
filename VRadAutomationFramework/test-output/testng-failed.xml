@@ -9,17 +9,15 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="URL" value="http://vrad-client.eastus.azurecontainer.io/"/>
     <classes>
-      <class name="com.tests.TSLogin">
+      <class name="com.tests.TSDPLogin">
         <methods>
-          <include name="SignIn"/>
-          <include name="teardown"/>
+          <include name="SignInWithVariousData" invocation-numbers="3 4"/>
           <include name="signout"/>
-          <include name="closeApplication"/>
           <include name="init"/>
-          <include name="Setup"/>
+          <include name="closeApplication"/>
           <include name="start"/>
         </methods>
-      </class> <!-- com.tests.TSLogin -->
+      </class> <!-- com.tests.TSDPLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

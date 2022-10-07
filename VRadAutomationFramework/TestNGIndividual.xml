@@ -12,17 +12,17 @@
 	<!--test name="Test" parallel = "classes" thread-count = "2" -->
 	
 		<parameter name="browser" value="chrome" />
-		<!--parameter name="URL" value="http://vrad-client.eastus.azurecontainer.io/"/-->
+		<parameter name="URL" value="http://vrad-client.eastus.azurecontainer.io/"/>
 		
 		<classes>
 				
-		 <class name="com.tests.TSNavigationPanel">
+		 <class name="com.tests.TSLogin">
 		 
 		   <methods>
 		   
-		      <include name="verifyUserAccountIconOnExpand"/>
+		      <include name="SignIn"/>
 		
-		      <exclude name="verifyIconsOnExpandCorrespondingToRoles"/>
+		      <exclude name="InvalidSignIn"/>
 	  
 	       </methods>
 	       

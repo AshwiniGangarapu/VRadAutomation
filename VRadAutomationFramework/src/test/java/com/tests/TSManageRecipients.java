@@ -64,7 +64,7 @@ public class TSManageRecipients extends BaseClass {
 	}
 
 
-	@Test(priority = 1)
+	@Test(priority = 1,groups={"regression"})
 	public void VerifySelectingRecordAndClickingEditRetrivesExactRecord() throws InterruptedException {
 
 		logger = report.startTest("VRad UAT Verify click edit on a record retrives exact record details Report");
@@ -140,7 +140,7 @@ public class TSManageRecipients extends BaseClass {
 		logger.log(LogStatus.INFO, "clicked cross button");
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0,groups= {"smoke"})
 	public void VerifyCreateRecipient() throws InterruptedException {
 
 		logger = report.startTest("VRad UAT Verify create new recipient Report");

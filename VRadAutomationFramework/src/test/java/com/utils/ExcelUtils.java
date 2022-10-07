@@ -1,11 +1,18 @@
 package com.utils;
 
+import java.io.Closeable;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
 
 public class ExcelUtils {
 
@@ -64,4 +71,50 @@ public class ExcelUtils {
 	public double getDataNumeric(XSSFSheet sheet, int cellNumber, int rowNumber) {
 		return getDataByColumnIndex(sheet, cellNumber, rowNumber).getNumericCellValue();
 	}
-}
+	
+
+	public void writeToExcel(String fPath, String fSheet, String xData) throws IOException { 
+		
+		File file = new File(fPath);
+		FileInputStream fis = new FileInputStream(file);		
+		XSSFWorkbook wb = new  XSSFWorkbook(fis);
+		 XSSFSheet sheet = wb.getSheet(fSheet);
+		 sheet.getRow(1).createCell(3).setCellValue(xData);
+		 File outFile = new File(fPath);
+		 FileOutputStream fOut = new FileOutputStream(outFile); 
+		 wb.write(fOut);
+	}
+		
+    @DataProvider(name = "firstDP")
+	public String[][] readExcelDataToArray(XSSFSheet sheet) {
+		
+		int rowCount = sheet.getLastRowNum();
+		System.out.println(rowCount);
+		int colCount = sheet.getRow(0).getLastCellNum();
+		System.out.println(colCount);
+		
+		String[][] data = new String[rowCount][colCount];
+		
+		for(int i=0;i<=rowCount-1;i++) {
+			System.out.println(i);
+			for(int j=0;j<=colCount-1;j++) {
+				System.out.println(j);
+				DataFormatter df = new DataFormatter();
+				System.out.println(sheet.getRow(i+1).getCell(j));
+				data[i][j]= df.formatCellValue(sheet.getRow(i+1).getCell(j));										
+			}
+			System.out.println();
+			}
+		for(String[] dataArr : data) {
+			
+			System.out.println(Arrays.toString(dataArr));
+			
+		}
+		
+		return data;
+			
+		}
+	}
+	
+	
+
