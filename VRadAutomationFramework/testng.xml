@@ -17,13 +17,13 @@
 		
 		<classes>
 					 
-		 <class name="com.tests.TSNavigationPanel" /> 
+		 <!--class name="com.tests.TSNavigationPanel" /> 
 		 <class name="com.tests.TSForgotPassword" />
 		 <class name="com.tests.TSDashboard" />	
 		 <class name="com.tests.TSNewDispatch" />
 		 <class name="com.tests.TSLogin" /> 
 		 <class name="com.tests.TSManageTemplates" />	
-		 <class name="com.tests.TSManageUsers" />
+		 <class name="com.tests.TSManageUsers" /-->
 	 	 <class name="com.tests.TSManageRecipients" />
 		  
 			  	 
