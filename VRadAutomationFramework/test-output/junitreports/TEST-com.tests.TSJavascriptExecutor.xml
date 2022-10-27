@@ -1,77 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="3" passed="0" failed="1" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2022-10-20T16:00:50 IST" name="Suite" finished-at="2022-10-20T16:01:58 IST" duration-ms="68404">
-    <groups>
-      <group name="smoke">
-        <method signature="TSJavascriptExecutor.VerifyScrolling()[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" name="VerifyScrolling" class="com.tests.TSJavascriptExecutor"/>
-      </group> <!-- smoke -->
-    </groups>
-    <test started-at="2022-10-20T16:00:50 IST" name="Test" finished-at="2022-10-20T16:01:58 IST" duration-ms="68404">
-      <class name="com.tests.TSJavascriptExecutor">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" started-at="2022-10-20T16:00:49 IST" name="start" finished-at="2022-10-20T16:00:50 IST" duration-ms="663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" started-at="2022-10-20T16:00:50 IST" name="init" finished-at="2022-10-20T16:00:56 IST" duration-ms="6064" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://vrad-client.eastus.azurecontainer.io/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" started-at="2022-10-20T16:00:56 IST" name="setUp" finished-at="2022-10-20T16:00:58 IST" duration-ms="2232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method retried="true" signature="VerifyScrolling()[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" started-at="2022-10-20T16:00:58 IST" name="VerifyScrolling" finished-at="2022-10-20T16:00:58 IST" duration-ms="15" status="SKIP">
-          <exception class="java.lang.StringIndexOutOfBoundsException">
-            <message>
-              <![CDATA[String index out of range: 2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 2
-at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
-at java.base/java.lang.String.charAt(String.java:1515)
-at com.tests.TSJavascriptExecutor.VerifyScrolling(TSJavascriptExecutor.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyScrolling -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" started-at="2022-10-20T16:00:58 IST" name="setUp" finished-at="2022-10-20T16:01:28 IST" duration-ms="30012" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@38d04d5c (tried for 30 second(s) with 15 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@38d04d5c (tried for 30 second(s) with 15 milliseconds interval)
+<!-- Generated by org.testng.reporters.JUnitReportReporter -->
+<testsuite hostname="SSTINADMLP1150" failures="0" tests="5" name="com.tests.TSJavascriptExecutor" time="62.267" errors="3" timestamp="2022-10-20T16:01:59 IST" skipped="2">
+  <testcase classname="com.tests.TSJavascriptExecutor" name="VerifyScrolling" time="2.233">
+    <skipped/>
+  </testcase> <!-- VerifyScrolling -->
+  <system-out/>
+  <testcase classname="com.tests.TSJavascriptExecutor" name="VerifyScrolling" time="0.015">
+    <skipped/>
+  </testcase> <!-- VerifyScrolling -->
+  <system-out/>
+  <testcase classname="com.tests.TSJavascriptExecutor" name="setUp" time="30.012">
+    <error message="Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@38d04d5c (tried for 30 second(s) with 15 milliseconds interval)" type="org.openqa.selenium.TimeoutException">
+      <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@38d04d5c (tried for 30 second(s) with 15 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:24)
@@ -126,49 +66,12 @@ at com.utils.SeleniumWaitUtils$1.apply(SeleniumWaitUtils.java:1)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 ... 23 more
 ]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method retried="true" signature="VerifyScrolling()[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" started-at="2022-10-20T16:01:28 IST" name="VerifyScrolling" finished-at="2022-10-20T16:01:28 IST" duration-ms="1" status="SKIP">
-          <exception class="java.lang.StringIndexOutOfBoundsException">
-            <message>
-              <![CDATA[String index out of range: 2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 2
-at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
-at java.base/java.lang.String.charAt(String.java:1515)
-at com.tests.TSJavascriptExecutor.VerifyScrolling(TSJavascriptExecutor.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyScrolling -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" started-at="2022-10-20T16:01:28 IST" name="setUp" finished-at="2022-10-20T16:01:58 IST" duration-ms="30006" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@4b03e42b (tried for 30 second(s) with 15 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@4b03e42b (tried for 30 second(s) with 15 milliseconds interval)
+    </error>
+  </testcase> <!-- setUp -->
+  <system-out/>
+  <testcase classname="com.tests.TSJavascriptExecutor" name="setUp" time="30.006">
+    <error message="Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@4b03e42b (tried for 30 second(s) with 15 milliseconds interval)" type="org.openqa.selenium.TimeoutException">
+      <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.utils.SeleniumWaitUtils$1@4b03e42b (tried for 30 second(s) with 15 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 at com.utils.SeleniumWaitUtils.doWaitForElement(SeleniumWaitUtils.java:24)
@@ -223,18 +126,12 @@ at com.utils.SeleniumWaitUtils$1.apply(SeleniumWaitUtils.java:1)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 ... 23 more
 ]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="VerifyScrolling()[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" started-at="2022-10-20T16:01:58 IST" name="VerifyScrolling" finished-at="2022-10-20T16:01:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.StringIndexOutOfBoundsException">
-            <message>
-              <![CDATA[String index out of range: 2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 2
+    </error>
+  </testcase> <!-- setUp -->
+  <system-out/>
+  <testcase classname="com.tests.TSJavascriptExecutor" name="VerifyScrolling" time="0.001">
+    <error message="String index out of range: 2" type="java.lang.StringIndexOutOfBoundsException">
+      <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 2
 at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
 at java.base/java.lang.String.charAt(String.java:1515)
 at com.tests.TSJavascriptExecutor.VerifyScrolling(TSJavascriptExecutor.java:72)
@@ -254,16 +151,7 @@ at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecuto
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyScrolling -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.tests.TSJavascriptExecutor@3b0fe47a]" started-at="2022-10-20T16:01:58 IST" name="closeApplication" finished-at="2022-10-20T16:01:59 IST" duration-ms="183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- com.tests.TSJavascriptExecutor -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+    </error>
+  </testcase> <!-- VerifyScrolling -->
+  <system-out/>
+</testsuite> <!-- com.tests.TSJavascriptExecutor -->

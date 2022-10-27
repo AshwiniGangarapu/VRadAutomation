@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tests.excelLoop">
+      <class name="com.tests.TSJavascriptExecutor">
         <methods>
-          <include name="Setup"/>
           <include name="init"/>
-          <include name="reference"/>
+          <include name="VerifyScrolling"/>
           <include name="closeApplication"/>
+          <include name="setUp"/>
           <include name="start"/>
         </methods>
-      </class> <!-- com.tests.excelLoop -->
+      </class> <!-- com.tests.TSJavascriptExecutor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

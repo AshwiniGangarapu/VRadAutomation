@@ -5,19 +5,19 @@
     <listener class-name="com.listeners.ListenerTest"/>
     <listener class-name="com.listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <parameter name="URL" value="http://vrad-client.eastus.azurecontainer.io/"/>
     <classes>
-      <class name="com.tests.TSDPLogin">
+      <class name="com.tests.TSJavascriptExecutor">
         <methods>
-          <include name="SignInWithVariousData" invocation-numbers="3 4"/>
-          <include name="signout"/>
           <include name="init"/>
+          <include name="VerifyScrolling"/>
           <include name="closeApplication"/>
+          <include name="setUp"/>
           <include name="start"/>
         </methods>
-      </class> <!-- com.tests.TSDPLogin -->
+      </class> <!-- com.tests.TSJavascriptExecutor -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
